@@ -11,34 +11,35 @@ $lora: 'Lora', serif;
 @import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Quicksand:400,700|Ubuntu|Josefin+Sans|Oxygen:400,700);
 /* sans-serif */
 $quicksand: 'Quicksand', sans-serif;
-$ptsans: 'PT Sans Narrow', sans-serif;
+// $ptsans: 'PT Sans Narrow', sans-serif;
 $ubuntu: 'Ubuntu', sans-serif;
 $josefin: 'Josefin Sans', sans-serif;
 $oxygen: 'Oxygen', sans-serif;
-
 
 $xlg-txt: 26px;
 $lg-txt: 24px;
 $md-txt: 22px;
 $sm-txt: 16px;
 
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: $josefin;
+	font-family: $oxygen;
 	color: #222;
 }
-
 h1 {
-
+	font-family: $josefin;
+	font-size: ($xlg-txt + 15px);
+	font-weight: bold;
 }
-h2 {}
+h2 {font-size: $lg-txt;}
 h3 {
-	font-size: $lg-txt;
+	margin-bottom: .75em;
+	font-size: 32px;
 	font-weight: bold;
 }
 h4 {}
 
-a {
-	color: white;
-}
+
+a {}
 
 

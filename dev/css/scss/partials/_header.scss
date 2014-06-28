@@ -1,7 +1,12 @@
 /* _header.scss */
 
 .primary-header {
+	height: 275px;
 	background: $light-blue; 
 }
-
 .primary-header h1 {}
+
+h1 small {
+	color: $light-blue-green;
+	display: block;
+}

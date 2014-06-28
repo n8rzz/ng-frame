@@ -1,5 +1,14 @@
 /*	_content.scss	*/
 
 article {
-	font-size: $md-txt; 
+	padding: .5em 0em 2em 1em;
+	font-family: $lora;
+	font-size: $md-txt;
 }
+
+hr {
+	width: 75%;
+	border-top: 1px dashed #aaa;
+}
+
+.jumbotron {margin-bottom: 0;}
