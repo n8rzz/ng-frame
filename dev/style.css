@@ -3857,8 +3857,17 @@ article p.blog-post-meta {
 article p.blog-post-meta a {
   font-style: normal !important; }
 
-article p:first-child {
-  font-size: 22px; }
+.post-nav-link {
+  margin-top: 50em; }
+
+.post-nav-link a {
+  height: 90px;
+  width: 90px;
+  display: block;
+  padding-top: 35px;
+  text-align: center;
+  border: 2px solid #1c2c46;
+  border-radius: 50%; }
 
 /* _footer.scss */
 footer {

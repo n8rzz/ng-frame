@@ -54,7 +54,13 @@ module.exports = function(grunt) {
 				}
 			},
 			html: {
-				files: 'dev/index.html',
+				files: 'dev/**/*.html',
+				options: {
+					livereload: true
+				}
+			},
+			config: {
+				files: ['package.json', 'Grunfile.js'],
 				options: {
 					livereload: true
 				}

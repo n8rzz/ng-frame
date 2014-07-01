@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>NG Framework - Barebones</title>
+
+    <!-- Bootstrap
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+ -->
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<div class="container-fluid primary-menu">
+	<div class="row">
+		<ul class="nav navbar-nav">
+			<li><a href="index.html">index</a></li>
+			<li><a href="post.html">post</a></li>
+			<li><a href="category.html">category / archive</a></li>
+			<li><a href="page.html">page</a></li>
+			<li><a href="contact">contact</a></li>
+		</ul>
+		<form class="navbar-form pull-right" role="search">
+			<div class="input-group form-group">
+				<input type="text" placeholder="search" class="form-control" />
+				<span class="input-group-btn">
+					<button type="submit" class="btn btn-success">S</button>
+				</span>
+			</div>
+		</form>
+	</div><!-- /.row -->
+</div><!-- /.container-fluid -->
+
+<div class="container-fluid jumbotron primary-header text-center">	
+	<div class="row">
+		<h1><span class="badge">New</span> Post Heading
+		 	<small>sub heading will go here</small>
+		</h1>
+	</div><!-- /.row -->
+</div><!-- /.jumbotron -->
+
+<div class="container">	
+	<div class="row">
+	   
+	  <div class="col-md-1 hidden-xs hidden-sm post-nav-link text-center"><a href="#">left page</a></div>
+	  
+	  <div class="col-sm-12 col-md-10">  		
+		<article class="text-left">
+			<p class="blog-post-meta">published: 01/01/1900 by <a href="#">author</a></p>
+			<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+            <hr>
+            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            <blockquote>
+              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </blockquote>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <h2>Heading</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <h3>Sub-heading</h3>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <pre><code>Example code block</code></pre>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+            <h3>Sub-heading</h3>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <ul>
+              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+              <li>Donec id elit non mi porta gravida at eget metus.</li>
+              <li>Nulla vitae elit libero, a pharetra augue.</li>
+            </ul>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+            <ol>
+              <li>Vestibulum id ligula porta felis euismod semper.</li>
+              <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+              <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+            </ol>
+            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>			
+	
+		<hr />	
+
+			<p class="blog-post-meta">posted in: <a href="#">category</a></p>
+				
+		</article>
+
+	  </div><!-- /.col-md-10 -->
+
+	  <div class="col-md-1 hidden-xs hidden-sm post-nav-link text-center"><a href="#">right pager</a></div>
+
+	</div><!-- /.row -->
+
+</div><!-- /.container-fluid -->
+
+<footer class="container-fluid text-center">
+	<div class="row">
+		<div class="col-md-12 top-footer">
+			<p>footer small menu</p>
+		</div>
+	</div><!-- /.row -->
+	
+	<div class="row">
+		<div class="col-md-12">
+			<p><small>footer small copy text and notes</small></p>
+		</div>		
+	</div>
+
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
