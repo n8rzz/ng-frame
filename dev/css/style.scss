@@ -1,19 +1,21 @@
-/* style.scss
+/* style.scss */
 
 /* Vendor Dependencies */
 @import "vendor/bootstrap.scss";
 
 /* Authored Dependencies */
-@import "scss/partials/variables";
+@import "scss/combined"; //temporary stylesheet, needs better split
+
+//@import "scss/partials/variables";
 
 /* Patterns */
 //@import "global/tabs";
 //@import "global/modals";
 
 /* Sections */
-@import "scss/partials/header";
-@import "scss/partials/content";
-@import "scss/partials/footer";
+//@import "scss/partials/header";
+//@import "scss/partials/content";
+//@import "scss/partials/footer";
 
 
 
