@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 			build: {
 				files: [{
 					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss',
-					src: 'dev/css/',
+					src: 'dev/styles/',
 				},
 				{
 					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/fonts/*',
@@ -41,13 +41,13 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				files: {
-					'style.css' : 'dev/css/style.scss'
+					'style.css' : 'dev/styles/style.scss'
 				}
 			}
 		},*/
 		watch: { 			 
 			css: {
-				files: ['dev/style.css'], //, 'dev/css/**/*.scss'
+				files: ['dev/style.css'], //, 'dev/styles/**/*.scss'
 				// tasks: ['sass:dist'], 'clean:sass',
 				options: {
 					livereload: true
