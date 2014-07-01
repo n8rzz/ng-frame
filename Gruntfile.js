@@ -85,10 +85,3 @@ module.exports = function(grunt) {
 	
 	grunt.registerTask('build', [ 'sass' ]);
 }
-
-		//metadata <%= meta.srcPath %>main.scss
-		/* var meta = {
-			bootstrapOrigin: 'bower_components/bootstrap-sass-official/vendor/assets/',
-			dev: '/dev/',
-			app: '/app/,'
-		},	*/
