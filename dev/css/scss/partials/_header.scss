@@ -1,5 +1,18 @@
 /* _header.scss */
 
+.primary-menu {
+	background: $slight-light-blue;
+	font-family: $oxygen;
+}
+.primary-menu .nav a {
+	color: #ededed;
+	&:hover,
+	&:focus {
+		background: $dark-blue;
+	}
+}
+
+
 .primary-header {
 	height: 275px;
 	background: $dark-blue;
@@ -12,6 +25,3 @@ h1 small {
 	display: block;
 }
 
-.primary-menu {
-	background: $slight-light-blue;
-}

@@ -1,6 +1,7 @@
 /*	_content.scss	*/
 
 article {
+	margin-top: 3em;
 	padding: .5em 0em 2em 1em;
 	font-family: $ubuntu;
 	font-size: 18px;
@@ -19,4 +20,17 @@ hr {
 	font-family: $oxygen;
 	color: #fff;
 	vertical-align: middle !important;
+}
+
+article p.blog-post-meta {
+	margin-bottom: .5em;
+	font-size: 75%;
+	font-style: italic;
+	color: $strong-green;
+}
+article p.blog-post-meta a {
+	font-style: normal !important;
+}
+article p:first-child {
+	font-size: $md-txt;
 }
