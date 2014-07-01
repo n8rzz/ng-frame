@@ -4,11 +4,16 @@
 //colors
 @import "color-codes";
 
-$light-blue: $color-secondary-1-7; 		// #40659f
-$dark-blue: $color-secondary-1-8; 		// #1c2c46
-$light-blue-green: $color-primary-1;  	// #69969c
-$medium-green: $color-secondary-2-2; 	// #4C976D
-$grey-blue: $color-secondary-1-6; 		// #747F90
+$light-light-blue: $color-secondary-1-1;	// #7689A9
+$light-blue: $color-secondary-1-7; 			// #40659f
+$slight-light-blue: $color-secondary-1-5; 	// #2C4770;
+$dark-blue: $color-secondary-1-8; 			// #1c2c46
+
+$grey-blue: $color-secondary-1-6; 			// #747F90
+
+$light-blue-green: $color-primary-1;  		// #69969c
+$medium-green: $color-secondary-2-2; 		// #4C976D
+
 
 /* --- fonts --- */
 @import "fonts";

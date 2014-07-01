@@ -37,18 +37,18 @@ module.exports = function(grunt) {
 					src: 'dev/fonts'
 				}]
 			}
-		},
+		},/*
 		sass: {
 			dist: {
 				files: {
 					'style.css' : 'dev/css/style.scss'
 				}
 			}
-		},
+		},*/
 		watch: { 			 
 			css: {
-				files: 'dev/css/**/*.scss',
-				tasks: ['sass:dist'], //'clean:sass',
+				files: ['dev/style.css'], //, 'dev/css/**/*.scss'
+				// tasks: ['sass:dist'], 'clean:sass',
 				options: {
 					livereload: true
 				}

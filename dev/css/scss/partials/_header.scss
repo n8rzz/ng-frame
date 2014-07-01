@@ -2,11 +2,16 @@
 
 .primary-header {
 	height: 275px;
-	background: $light-blue; 
+	background: $dark-blue;
+	color: $light-light-blue;
 }
 .primary-header h1 {}
 
 h1 small {
-	color: $light-blue-green;
+	margin-top: .15em;
 	display: block;
+}
+
+.primary-menu {
+	background: $slight-light-blue;
 }

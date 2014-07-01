@@ -1,12 +1,5 @@
 /* fonts.scss */
-/*	google serif fonts	https://www.google.com/fonts#UsePlace:use/Collection:Arvo|Lora|Rokkitt */
 /*	google sans fonts 	https://www.google.com/fonts#UsePlace:use/Collection:PT+Sans+Narrow|Quicksand:400,700|Ubuntu|Josefin+Sans|Oxygen:400,700 */
-
-@import url(http://fonts.googleapis.com/css?family=Arvo|Lora|Rokkitt);
-/* serifs */
-$arvo: 'Arvo', serif;
-$lora: 'Lora', serif;
-// $rokkitt: 'Rokkitt', serif;
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Quicksand:400,700|Ubuntu|Josefin+Sans|Oxygen:400,700);
 /* sans-serif */
@@ -16,29 +9,24 @@ $ubuntu: 'Ubuntu', sans-serif;
 $josefin: 'Josefin Sans', sans-serif;
 $oxygen: 'Oxygen', sans-serif;
 
-$xlg-txt: 26px;
+$xlg-txt: 4em;
 $lg-txt: 24px;
 $md-txt: 22px;
 $sm-txt: 16px;
 
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $oxygen;
-	color: #222;
-}
-h1 {
 	font-family: $josefin;
-	font-size: ($xlg-txt + 15px);
 	font-weight: bold;
 }
-h2 {font-size: $lg-txt;}
+h1 {font-size: $xlg-txt;}
+h2 {font-size: ($xlg-txt * .9);}
 h3 {
-	margin-bottom: .75em;
-	font-size: 32px;
-	font-weight: bold;
+	font-size: ($xlg-txt * .8);
 }
-h4 {}
-
+h4 {font-size: ($xlg-txt * .7);}
+h5 {font-size: ($xlg-txt * .6);}
+h6 {font-size: ($xlg-txt * .5);}
 
 a {}
 
