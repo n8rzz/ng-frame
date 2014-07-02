@@ -3807,11 +3807,13 @@ hr {
 
 footer {
   min-height: 10em;
-  margin-top: 2em;
   background: #1c2c46;
   font-family: "Quicksand", sans-serif;
   font-size: 1.1em;
   color: white; }
+
+footer p {
+  padding: 1em 0; }
 
 /* Partials */
 /* header.scss #################### */
@@ -3871,8 +3873,7 @@ article p.blog-post-meta a {
 /* /content.scss #################### */
 /* footer.scss #################### */
 .top-footer {
-  padding: 1em 0 .5em 0;
-  background: #40659f; }
+  background: #2c4770; }
 
 /* /footer.scss #################### */
 /* Sections */

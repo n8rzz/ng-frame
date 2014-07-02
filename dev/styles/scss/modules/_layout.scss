@@ -30,9 +30,12 @@ hr {
 
 footer {
 	min-height: 10em;
-	margin-top: 2em;
 	background: $dark-blue;
 	font-family: $footer-font;
 	font-size: $sm-txt;
 	color: $footer-text-color;
+}
+
+footer p {
+	padding: 1em 0;
 }
