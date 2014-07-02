@@ -1,0 +1,21 @@
+/* content.scss #################### */
+
+.jumbotron {margin-bottom: 0;}
+.badge {
+	padding: 4px 9px !important;
+	background: $medium-green;
+	font-family: $oxygen;
+	color: #fff;
+	vertical-align: middle !important;
+}
+
+article p.blog-post-meta {
+	margin-bottom: .5em;
+	font-size: 75%;
+	font-style: italic;
+	color: $strong-green;
+}
+article p.blog-post-meta a {
+	font-style: normal !important;
+}
+/* /content.scss #################### */

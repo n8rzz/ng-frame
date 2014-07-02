@@ -1,0 +1,38 @@
+html{}
+body{
+	font-family: $body-font;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading-font;
+	font-weight: bold;
+}
+h1 {font-size: $lg-txt;}
+h2 {font-size: ($lg-txt * .9);}
+h3 {font-size: ($lg-txt * .8);}
+h4 {font-size: ($lg-txt * .7);}
+h5 {font-size: ($lg-txt * .6);}
+h6 {font-size: ($lg-txt * .5);}
+
+a {}
+
+article {
+	margin-top: 3em;
+	padding: .5em 0em 2em 1em;
+	font-family: $ubuntu;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+hr {
+	width: 75%;
+	border-top: 1px dashed #aaa;
+}
+
+footer {
+	min-height: 10em;
+	margin-top: 2em;
+	background: $dark-blue;
+	font-family: $footer-font;
+	font-size: $sm-txt;
+	color: $footer-text-color;
+}

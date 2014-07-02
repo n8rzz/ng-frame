@@ -1,6 +1,6 @@
-style.css
 .sass-cache/
 bower_components/
 node_modules/
+dev/style.css
 dev/.sass-cache/
-dev/support/
+dev/_ocss/

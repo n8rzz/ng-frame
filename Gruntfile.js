@@ -29,26 +29,26 @@ module.exports = function(grunt) {
 		copy: {
 			build: {
 				files: [{
-					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss',
-					src: 'dev/css/',
+					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/*',
+					src: 'dev/styles/',
 				},
 				{
 					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/fonts/*',
 					src: 'dev/fonts'
 				}]
 			}
-		},/*
+		},
 		sass: {
 			dist: {
 				files: {
-					'style.css' : 'dev/css/style.scss'
+					'dev/style.css' : 'dev/styles/style.scss'
 				}
 			}
-		},*/
+		},
 		watch: { 			 
 			css: {
-				files: ['dev/style.css'], //, 'dev/css/**/*.scss'
-				// tasks: ['sass:dist'], 'clean:sass',
+				files: ['dev/style.css', 'dev/styles/**/*.scss'], 
+				tasks: ['sass:dist'], //'clean:sass',
 				options: {
 					livereload: true
 				}
@@ -81,14 +81,10 @@ module.exports = function(grunt) {
 		'watch'
 	])
 
-	grunt.registerTask('ibuild', [ 'copy:build' ]);
+	grunt.registerTask('ibuild', [ 
+		'copy:build',
+		'sass'
+	]);
 	
 	grunt.registerTask('build', [ 'sass' ]);
 }
-
-		//metadata <%= meta.srcPath %>main.scss
-		/* var meta = {
-			bootstrapOrigin: 'bower_components/bootstrap-sass-official/vendor/assets/',
-			dev: '/dev/',
-			app: '/app/,'
-		},	*/
