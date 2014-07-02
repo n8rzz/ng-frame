@@ -8,12 +8,14 @@
 @import "scss/modules/colors";
 @import "scss/modules/typography";
 @import "scss/modules/variables";
+@import "scss/modules/mixins";
 @import "scss/modules/layout";
 
 /* Partials */
 @import "scss/partials/header";
 @import "scss/partials/navigation";
 @import "scss/partials/content";
+@import "scss/partials/comments";
 @import "scss/partials/footer";
 
 /* Sections */

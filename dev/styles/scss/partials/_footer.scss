@@ -1,6 +1,13 @@
 /* footer.scss #################### */
+
 .top-footer {
+	height: 10em;
 	background: $slight-light-blue;
+	color: $footer-txt-color;
 }
+.bottom-footer {
+	color: $footer-txt-color;	
+}
+.bottom-footer p {padding: 0;}
 
 /* /footer.scss #################### */

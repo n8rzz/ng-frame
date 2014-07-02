@@ -1,6 +1,6 @@
-html{}
-body{
-	font-family: $body-font;
+html {}
+body {
+	@include base-text-style;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: $heading-font;
@@ -18,22 +18,18 @@ a {}
 article {
 	margin-top: 3em;
 	padding: .5em 0em 2em 1em;
-	font-family: $ubuntu;
-	font-size: 18px;
-	line-height: 1.5em;
 }
 
 hr {
 	width: 75%;
+	margin: 3em 0;
 	border-top: 1px dashed #aaa;
 }
 
 footer {
-	min-height: 10em;
 	background: $dark-blue;
 	font-family: $footer-font;
-	font-size: $sm-txt;
-	color: $footer-text-color;
+	font-size: $xsm-txt;
 }
 
 footer p {
