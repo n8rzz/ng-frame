@@ -4,13 +4,17 @@
 @import "vendor/bootstrap.scss";
 
 /* Authored Dependencies */
-@import "scss/combined"; //temporary stylesheet, needs better split 
+/* Modules */ //doesn't output any css; mixins, functions, variables,  
+@import "scss/modules/colors";
+@import "scss/modules/typography";
+@import "scss/modules/variables";
+@import "scss/modules/layout";
 
-//@import "scss/partials/variables";
-
-/* Patterns */
-//@import "global/tabs";
-//@import "global/modals";
+/* Partials */
+@import "scss/partials/header";
+@import "scss/partials/navigation";
+@import "scss/partials/content";
+@import "scss/partials/footer";
 
 /* Sections */
 //@import "scss/partials/header";

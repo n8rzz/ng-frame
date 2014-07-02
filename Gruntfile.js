@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 		copy: {
 			build: {
 				files: [{
-					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss',
+					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/*',
 					src: 'dev/styles/',
 				},
 				{
@@ -37,18 +37,18 @@ module.exports = function(grunt) {
 					src: 'dev/fonts'
 				}]
 			}
-		},/*
+		},
 		sass: {
 			dist: {
 				files: {
-					'style.css' : 'dev/styles/style.scss'
+					'dev/style.css' : 'dev/styles/style.scss'
 				}
 			}
-		},*/
+		},
 		watch: { 			 
 			css: {
-				files: ['dev/style.css'], //, 'dev/styles/**/*.scss'
-				// tasks: ['sass:dist'], 'clean:sass',
+				files: ['dev/style.css', 'dev/styles/**/*.scss'], 
+				tasks: ['sass:dist'], //'clean:sass',
 				options: {
 					livereload: true
 				}
@@ -81,7 +81,10 @@ module.exports = function(grunt) {
 		'watch'
 	])
 
-	grunt.registerTask('ibuild', [ 'copy:build' ]);
+	grunt.registerTask('ibuild', [ 
+		'copy:build',
+		'sass'
+	]);
 	
 	grunt.registerTask('build', [ 'sass' ]);
 }
