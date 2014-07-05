@@ -3916,8 +3916,9 @@ footer.post-author-meta p {
 #sidebar {
   margin-top: 3em;
   padding: 0.5em;
-  font-size: 0.9em;
+  font-size: 0.7em;
   font-family: "Oxygen", sans-serif;
+  line-height: 1.3em;
   border: 1px solid #0f5b30; }
 
 .comments-container {
