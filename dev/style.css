@@ -3796,6 +3796,12 @@ h6 {
 article {
   margin-top: 3em;
   padding: .5em 0em 2em 1em; }
+  article small {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 25%; }
+  article img {
+    padding-top: 1.75em;
+    padding-bottom: 1.75em; }
 
 hr {
   width: 75%;
@@ -3859,13 +3865,17 @@ h1 small {
   color: #fff;
   vertical-align: middle !important; }
 
+.blog-post-meta-published {
+  font-size: 80%;
+  color: #4c976d; }
+
 .blog-author-meta {
   padding-top: 1em;
   padding-bottom: 3em;
   background-color: #f2f5f7; }
 
 p.blog-post-meta-category {
-  margin-bottom: .05em;
+  margin-bottom: 0.05em;
   font-size: 70%;
   color: #222; }
 
@@ -3879,6 +3889,7 @@ p.blog-post-meta-category a, p.blog-post-meta-tags a {
 
 footer.post-author-meta {
   margin-top: 2em;
+  margin-bottom: 4em;
   padding: 5px 20px;
   background: #fff;
   border: 1px solid #ccc;
@@ -3902,8 +3913,16 @@ footer.post-author-meta p {
   padding-bottom: 2em; }
 
 /* /content.scss #################### */
+#sidebar {
+  margin-top: 3em;
+  padding: 0.5em;
+  font-size: 0.9em;
+  font-family: "Oxygen", sans-serif;
+  border: 1px solid #0f5b30; }
+
 .comments-container {
   padding: 2em 0 2em 2em;
+  font-size: 0.9em;
   line-height: 1.3em;
   background: #79b694;
   border-bottom: 1px solid #052354; }
@@ -3914,6 +3933,8 @@ ol.commentlist {
 article.comment {
   width: 90%;
   border: 1px solid #f2f5f7; }
+  article.comment img.avatar {
+    padding-right: 1em; }
 
 /* footer.scss #################### */
 .top-footer {

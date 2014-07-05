@@ -47,43 +47,84 @@
 <div class="container">	
 	<div class="row">
 	  
-	  <div class="col-md-12">  		
+	  <div class="col-sm-12 col-md-9">  		
 		<article class="text-left">
 			<h3>Page / Post Heading <span class="badge">New</span></h3>
-			<p class="blog-post-meta">published: 01/01/1900 by <a href="#">author</a></p>
+			<p class="blog-post-meta-published">published: 01/01/1900</p>
 
 			<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
             <hr>
             <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            
             <blockquote>
               <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
             </blockquote>
+            
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <h2>Heading</h2>
+            
+			<h1>H1 Heading <small>small sub-text</small></h1>
+            <h2>H2 Heading <small>small sub-text</small></h2>
+            <h3>H3 Heading <small>small sub-text</small></h3>
+            <h4>H4 Heading <small>small sub-text</small></h4>
+            <h5>H5 Heading <small>small sub-text</small></h5>
+            <h6>H6 Heading <small>small sub-text</small></h6>
+            
             <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+            <img class="img-responsive" src="http://www.fillmurray.com/500/500" />
+
             <h3>Sub-heading</h3>
+            
             <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            
             <pre><code>Example code block</code></pre>
+            
             <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+            
             <h3>Sub-heading</h3>
+            
             <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+            <img class="img-responsive center-block" src="http://www.fillmurray.com/600/300" />
+            
             <ul>
               <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
               <li>Donec id elit non mi porta gravida at eget metus.</li>
               <li>Nulla vitae elit libero, a pharetra augue.</li>
             </ul>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+            
+            <p>Biltong ribeye ham hock, rump hamburger drumstick fatback beef ribs corned beef bacon pork jowl flank ground round. Capicola pork chop prosciutto landjaeger jerky bresaola short loin biltong strip steak pork doner venison. Ribeye beef ribs pork loin frankfurter landjaeger andouille ham tongue ham hock strip steak jerky kevin. Beef ribs jowl frankfurter, andouille sausage ball tip jerky. Cow kevin ham bresaola turkey. Ground round spare ribs brisket tongue, porchetta ham hock doner t-bone shankle prosciutto rump.</p>
+            
             <ol>
               <li>Vestibulum id ligula porta felis euismod semper.</li>
               <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
               <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
             </ol>
+            
             <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>			
 			
 			<hr />	
 
 		</article>
-  		</div><!-- /.col-md-12 -->
+  		</div><!-- /.col-xs-12 col-m-9 -->
+
+		<!-- SIDEBAR -->
+		<div class="col-md-3 hidden-xs hidden-sm">
+			<div id="sidebar">
+				<form>
+					<input type="text" class="form-control" placeholder="search">
+				</form>
+				<p>sidebar goes here</p>
+				<ul>
+					<li><a href="#"></a>list item</li>
+					<li><a href="#"></a>list item</li>
+					<li><a href="#"></a>list item</li>
+					<li><a href="#"></a>list item</li>
+					<li><a href="#"></a>list item</li>
+				</ul>
+			</div>
+		</div><!-- /.col-sm-3 -->
+
 	</div><!-- /.row -->
 </div><!-- /.container -->
 
@@ -106,10 +147,12 @@
 
 			</footer>
 		</div><!-- /.col-md-12 -->	
+
 	</div><!-- /.row -->
 </div><!-- /.container-fluid -->
 
 
+<!-- COMMENTS -->
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12 comments-container">
@@ -161,7 +204,6 @@
 			<p><small>footer small copy text and notes</small></p>
 		</div>		
 	</div><!-- /.row -->
-
 </footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

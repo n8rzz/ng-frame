@@ -39,13 +39,7 @@ module.exports = function(grunt) {
 					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/fonts/*',
 					src: 'dev/fonts'
 				}]
-			},/*
-			build: {
-				files: [{
-					cwd: 'dev/',
-					src: 'dist/'
-				}]
-			}*/
+			}	
 		},
 		sass: {
 			dist: {
@@ -56,7 +50,7 @@ module.exports = function(grunt) {
 		},
 		watch: { 			 
 			css: {
-				files: ['dev/style.css', 'dev/styles/**/*.scss'], 
+				files: ['dev/styles/**/*.scss'], 
 				tasks: ['sass:dist'], //'clean:sass',
 				options: {
 					livereload: true
@@ -64,12 +58,6 @@ module.exports = function(grunt) {
 			},
 			html: {
 				files: 'dev/**/*.html',
-				options: {
-					livereload: true
-				}
-			},
-			config: {
-				files: ['package.json', 'Grunfile.js'],
 				options: {
 					livereload: true
 				}

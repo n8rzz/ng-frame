@@ -16,8 +16,16 @@ h6 {font-size: ($lg-txt * .5);}
 a {}
 
 article {
-	margin-top: 3em;
+	margin-top: 3em; 
 	padding: .5em 0em 2em 1em;
+	small {
+		font-family: $ubuntu;
+		font-size: 25%;
+	}
+	img {
+		padding-top: 1.75em;
+		padding-bottom: 1.75em;
+	}
 }
 
 hr {
@@ -26,6 +34,7 @@ hr {
 	margin-bottom: 2em;
 	border-top: 1px dashed #aaa;
 }
+
 
 footer {
 	background: $dark-blue;
