@@ -1,13 +1,8 @@
 /* header.scss #################### */
 .primary-header {
-	height: 275px;
+	min-height: 275px;
 	background: $dark-blue;
 	color: $light-light-blue;
 }
 .primary-header h1 {}
-
-h1 small {
-	margin-top: .15em;
-	display: block;
-}
 /* /header.scss #################### */

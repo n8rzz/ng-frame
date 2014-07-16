@@ -1,7 +1,7 @@
 /* style.scss */
 
 /* Vendor Dependencies */
-@import "vendor/bootstrap.scss";
+//@import "vendor/bootstrap.scss";
 
 /* Authored Dependencies */
 /* Modules */ //doesn't output any css; mixins, functions, variables,  
@@ -12,6 +12,7 @@
 @import "scss/modules/layout";
 
 /* Partials - Elements */
+@import "scss/partials/overboots";
 @import "scss/partials/navigation";
 
 /* Partials - Sections */
