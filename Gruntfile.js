@@ -5,6 +5,11 @@ module.exports = function(grunt) {
     require('time-grunt')(grunt);
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
+	var config = {
+		dev: 'dev',
+		dist: 'dist'
+	}
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		
@@ -19,6 +24,13 @@ module.exports = function(grunt) {
 			}
 		},
 		clean: {
+			bower: {
+				src: [
+					'dev/styles/vendor/**',
+					'dev/js/vendor/**',
+					'dev/fonts/**'
+				]
+			},
 			sass: {
 				src: [
 					'.sass-cache',
@@ -29,18 +41,29 @@ module.exports = function(grunt) {
 				src: 'dist/**/*{.html,.css}'
 			}
 		},
-		copy: {
+/*		*/copy: {
 			bower: {
 				files: [{
-					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/*',
-					src: 'dev/styles/',
+					expand: true,
+					cwd: 'bower_components/bootstrap-sass-official/assets/stylesheets/',
+					src: '**',
+					dest: 'dev/styles/vendor/'
 				},
 				{
-					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/fonts/*',
-					src: 'dev/fonts'
+					expand: true,
+					cwd: 'bower_components/bootstrap-sass-official/assets/fonts/',
+					src: '**',
+					dest: 'dev/fonts/'
+				},
+				{
+					expand: true,
+					cwd: 'bower_components/bootstrap-sass-official/assets/javascripts/',
+					src: '**',
+					dest: 'dev/js/vendor/',
+					flatten: true		
 				}]
 			}	
-		},
+		}, 
 		sass: {
 			dist: {
 				files: {
@@ -73,6 +96,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [ 'watch' ]);
 	
 	grunt.registerTask('bower-build', [ 
+		'clean:bower',
 		'copy:bower',
 		'sass'
 	]);
