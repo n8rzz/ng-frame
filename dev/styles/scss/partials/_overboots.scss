@@ -2,7 +2,9 @@
 .navbar {
 	margin-bottom: 0;
 	border: none;
+	border-radius: 0;
 }
+
 .navbar-default {}
 
 .navbar-header {}
@@ -11,17 +13,40 @@
 }
 
 .nabbar-toggle {}
+
 .navbar-default {
-	.navbar-nav>li>a {
+	background: $slight-light-blue;
+	font-family: $nav-font;
+	.navbar-nav>li {
+		a {
 		color: white;
-		&:hover {
+			&:hover {
+				background-color: $dark-blue;
+				color: $light-blue;
+			}
+		}
+		&.active>a,
+		&.active>a:hover,
+		&.active>a:focus,
+		&.open>a,
+		&.open>a:hover,
+		&.open>a:focus {
 			background-color: $dark-blue;
 			color: $light-blue;
 		}
+	} // navbar-nav li
+	.navbar-collapse {
+		border: none;
 	}
-	.navbar-nav>.active>a,
-	.navbar-nav>.open>a {
+	.navbar-nav .open .dropdown-menu {
 		background-color: $dark-blue;
-		color: $light-blue;
+		>li>a {
+			color: white;
+			&:hover,
+			&:focus{
+				background-color: $slight-light-blue;	
+			}
+		}
 	}
-}
+} // .navbar-default
+

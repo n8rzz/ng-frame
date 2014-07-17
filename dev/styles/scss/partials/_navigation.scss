@@ -1,17 +1,4 @@
 /* navigation.scss	#################### */
-/*-- header nav --*/
-.primary-menu {
-	background: $slight-light-blue;
-	font-family: $nav-font;
-}
-.primary-menu .nav a {
-	padding-bottom: 1em;
-	color: #ededed;
-	&:hover,
-	&:focus {
-		background: $dark-blue;
-	}
-}
 
 /*-- post nav --*/
 .post-nav-link {
