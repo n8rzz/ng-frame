@@ -1,0 +1,54 @@
+/*-- bootstrap class over-writes --*/
+
+/*-- navigation --*/
+.navbar {
+	margin-bottom: 0;
+	border: none;
+	border-radius: 0;
+}
+
+.navbar-default {}
+
+.navbar-header {}
+.navbar-brand {
+	color: $medium-green !important;
+}
+
+.nabbar-toggle {}
+
+.navbar-default {
+	background: $slight-light-blue;
+	font-family: $nav-font;
+	.navbar-nav>li {
+		a {
+		color: white;
+			&:hover {
+				background-color: $dark-blue;
+				color: $light-blue;
+			}
+		}
+		&.active>a,
+		&.active>a:hover,
+		&.active>a:focus,
+		&.open>a,
+		&.open>a:hover,
+		&.open>a:focus {
+			background-color: $dark-blue;
+			color: $light-blue;
+		}
+	} // navbar-nav li
+	.navbar-collapse {
+		border: none;
+	}
+	.navbar-nav .open .dropdown-menu {
+		background-color: $dark-blue;
+		>li>a {
+			color: white;
+			&:hover,
+			&:focus{
+				background-color: $slight-light-blue;	
+			}
+		}
+	}
+} // .navbar-default
+

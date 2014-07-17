@@ -1,0 +1,26 @@
+.comments-container {
+	padding: 2em 0 2em 2em;
+	font-size: $xsm-txt;
+	line-height: 1.3em;
+	background: $basic-green;
+	border-bottom: 1px solid $dark-dark-blue;
+}
+
+.comments-container h4 {}
+p.post-comments {}
+ol.commentlist {list-style-type: none;}
+ol.commentlist li {}
+article.comment {
+	width: 90%;
+	border: 1px solid $light-light-grey;
+	img.avatar {
+		padding-right: 1em;
+	}
+}
+img.avatar {}
+span.comment-name {}
+span.comment-date {}
+div.comment-content {}
+article.comment {}
+article.comment p {}
+article.comment p a {}

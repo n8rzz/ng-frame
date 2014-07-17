@@ -1,0 +1,23 @@
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - styles/style.scss
+
+Backtrace:
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:369:in `read'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:369:in `update_stylesheet'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `each'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:221:in `watch'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/lib/sass/plugin.rb:108:in `method_missing'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/lib/sass/exec.rb:509:in `watch_or_update'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/lib/sass/exec.rb:346:in `process_result'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/lib/sass/exec.rb:43:in `parse'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/lib/sass/exec.rb:22:in `parse!'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/gems/sass-3.3.9/bin/sass:13:in `<top (required)>'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/bin/sass:23:in `load'
+/home/n8/.rvm/gems/ruby-2.1.2@railstutorial_rails_4_1_4/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - styles/style.scss"; }

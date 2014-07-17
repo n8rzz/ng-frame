@@ -24,10 +24,13 @@ module.exports = function(grunt) {
 					'.sass-cache',
 					'dev/.sass-cache'
 				]
+			},
+			build: {
+				src: 'dist/**/*{.html,.css}'
 			}
 		},
 		copy: {
-			build: {
+			bower: {
 				files: [{
 					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/*',
 					src: 'dev/styles/',
@@ -36,7 +39,7 @@ module.exports = function(grunt) {
 					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/fonts/*',
 					src: 'dev/fonts'
 				}]
-			}
+			}	
 		},
 		sass: {
 			dist: {
@@ -47,7 +50,7 @@ module.exports = function(grunt) {
 		},
 		watch: { 			 
 			css: {
-				files: ['dev/style.css', 'dev/styles/**/*.scss'], 
+				files: ['dev/styles/**/*.scss'], 
 				tasks: ['sass:dist'], //'clean:sass',
 				options: {
 					livereload: true
@@ -55,12 +58,6 @@ module.exports = function(grunt) {
 			},
 			html: {
 				files: 'dev/**/*.html',
-				options: {
-					livereload: true
-				}
-			},
-			config: {
-				files: ['package.json', 'Grunfile.js'],
 				options: {
 					livereload: true
 				}
@@ -75,16 +72,19 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('default', [ 'watch' ]);
 	
+	grunt.registerTask('bower-build', [ 
+		'copy:bower',
+		'sass'
+	]);
+
 	grunt.registerTask('server', [
 		'express',
 		'open',
 		'watch'
 	])
-
-	grunt.registerTask('ibuild', [ 
-		'copy:build',
-		'sass'
-	]);
 	
-	grunt.registerTask('build', [ 'sass' ]);
+	grunt.registerTask('dist', [
+		'clean:build',
+		'copy:build'
+	]);
 }

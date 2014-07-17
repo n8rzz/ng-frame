@@ -1,28 +1,23 @@
 /* style.scss */
 
 /* Vendor Dependencies */
-@import "vendor/bootstrap.scss";
+//@import "vendor/bootstrap.scss";
 
 /* Authored Dependencies */
 /* Modules */ //doesn't output any css; mixins, functions, variables,  
 @import "scss/modules/colors";
 @import "scss/modules/typography";
 @import "scss/modules/variables";
+@import "scss/modules/mixins";
 @import "scss/modules/layout";
 
-/* Partials */
-@import "scss/partials/header";
+/* Partials - Elements */
+@import "scss/partials/overboots";
 @import "scss/partials/navigation";
+
+/* Partials - Sections */
+@import "scss/partials/header";
 @import "scss/partials/content";
+@import "scss/partials/sidebar";
+@import "scss/partials/comments";
 @import "scss/partials/footer";
-
-/* Sections */
-//@import "scss/partials/header";
-//@import "scss/partials/content";
-//@import "scss/partials/footer";
-
-
-
-
-
-

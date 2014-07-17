@@ -1,15 +1,4 @@
-/*-- header nav --*/
-.primary-menu {
-	background: $slight-light-blue;
-	font-family: $nav-font;
-}
-.primary-menu .nav a {
-	color: #ededed;
-	&:hover,
-	&:focus {
-		background: $dark-blue;
-	}
-}
+/* navigation.scss	#################### */
 
 /*-- post nav --*/
 .post-nav-link {
@@ -24,3 +13,4 @@
 	border: 2px solid $dark-blue;
 	border-radius: 50%;
 }
+/* /navigation.scss	#################### */

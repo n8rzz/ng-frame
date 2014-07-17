@@ -1,12 +1,21 @@
-html{}
-body{
-	font-family: $body-font;
+html {}
+body {
+	@include base-text-style;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: $heading-font;
 	font-weight: bold;
 }
-h1 {font-size: $lg-txt;}
+h1 {
+	font-size: $lg-txt;
+	small {
+		padding-top: .25em;
+		display: block;
+		font-family: $ubuntu;
+		font-size: 18px;
+		color: $medium-green;
+	}
+}
 h2 {font-size: ($lg-txt * .9);}
 h3 {font-size: ($lg-txt * .8);}
 h4 {font-size: ($lg-txt * .7);}
@@ -16,23 +25,33 @@ h6 {font-size: ($lg-txt * .5);}
 a {}
 
 article {
-	margin-top: 3em;
-	padding: .5em 0em 2em 1em;
-	font-family: $ubuntu;
-	font-size: 18px;
-	line-height: 1.5em;
+	margin-top: 2em; 
+	padding: 0.5em 0em 2em 1em;
+	h3,
+	h4 { margin-top: 1em;}
+	small {
+		font-family: $ubuntu;
+		font-size: 25%;
+	}
+	img {
+		margin: 0.5em 1em;
+	}
 }
 
 hr {
 	width: 75%;
+	margin-top: 3em;
+	margin-bottom: 2em;
 	border-top: 1px dashed #aaa;
 }
 
+
 footer {
-	min-height: 10em;
-	margin-top: 2em;
 	background: $dark-blue;
 	font-family: $footer-font;
-	font-size: $sm-txt;
-	color: $footer-text-color;
+	font-size: $xsm-txt;
+}
+
+footer p {
+	padding: 1em 0;
 }
