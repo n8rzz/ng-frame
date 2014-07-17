@@ -26,14 +26,15 @@ a {}
 
 article {
 	margin-top: 2em; 
-	padding: .5em 0em 2em 1em;
+	padding: 0.5em 0em 2em 1em;
+	h3,
+	h4 { margin-top: 1em;}
 	small {
 		font-family: $ubuntu;
 		font-size: 25%;
 	}
 	img {
-		padding-top: 1.75em;
-		padding-bottom: 1.75em;
+		margin: 0.5em 1em;
 	}
 }
 

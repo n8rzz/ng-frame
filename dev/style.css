@@ -43,13 +43,15 @@ h6 {
 
 article {
   margin-top: 2em;
-  padding: .5em 0em 2em 1em; }
+  padding: 0.5em 0em 2em 1em; }
+  article h3,
+  article h4 {
+    margin-top: 1em; }
   article small {
     font-family: "Ubuntu", sans-serif;
     font-size: 25%; }
   article img {
-    padding-top: 1.75em;
-    padding-bottom: 1.75em; }
+    margin: 0.5em 1em; }
 
 hr {
   width: 75%;
@@ -66,7 +68,8 @@ footer p {
   padding: 1em 0; }
 
 /* Partials - Elements */
-/*-- bootstrap tweaks --*/
+/*-- bootstrap class over-writes --*/
+/*-- navigation --*/
 .navbar {
   margin-bottom: 0;
   border: none;
