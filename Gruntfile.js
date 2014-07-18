@@ -13,6 +13,8 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		
+		config: config,
+
 		express: {
 			all: {
 				options: {
@@ -38,10 +40,10 @@ module.exports = function(grunt) {
 				]
 			},
 			build: {
-				src: 'dist/**/*{.html,.css}'
+				src: 'dist/**/*'
 			}
 		},
-/*		*/copy: {
+		copy: {
 			bower: {
 				files: [{
 					expand: true,
@@ -61,6 +63,16 @@ module.exports = function(grunt) {
 					src: '**',
 					dest: 'dev/js/vendor/',
 					flatten: true		
+				}]
+			},
+			build: {
+				files: [{
+					expand: true,
+					cwd: '<%= config.dev %>',
+					dest: '<%= config.dist %>',
+					src: [
+						'*.{html,css}'
+					]
 				}]
 			}	
 		}, 
@@ -90,6 +102,37 @@ module.exports = function(grunt) {
 			all: {
 				path: 'http://localhost:<%= express.all.options.port%>/index.html'
 			}
+		},
+
+/*		useminPrepare: {
+			options: {
+				dest: '<%= config.dist %>'
+			},
+			html: '<%= config.dev %>',
+		},
+		usemin: {
+			options: {
+				assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images' ]
+			},
+*/ //			html: ['<%= config.dist %>/{,*/}*.html'],
+//			css: [],
+//		},
+
+		htmlmin: {
+			dist: {
+				options: {
+                    collapseBooleanAttributes: true,
+                    collapseWhitespace: true,
+                    removeCommentsFromCDATA: true,
+                    useShortDoctype: true
+                },
+                files: {
+                	'<%= config.dist %>/index.html' : '<%= config.dev %>/index.html',
+                	'<%= config.dist %>/post.html' : '<%= config.dev %>/post.html',
+                	'<%= config.dist %>/page.html' : '<%= config.dev %>/page.html',
+                	'<%= config.dist %>/category.html' : '<%= config.dev %>/category.html'
+                }
+			}
 		}
 	});
 
@@ -107,8 +150,11 @@ module.exports = function(grunt) {
 		'watch'
 	])
 	
-	grunt.registerTask('dist', [
+	grunt.registerTask('build', [
 		'clean:build',
-		'copy:build'
+		'copy:build',
+//		'useminPrepare',
+//		'usemin',
+		'htmlmin'
 	]);
 }
