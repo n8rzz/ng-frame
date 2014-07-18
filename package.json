@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "author": "n8rzz",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/n8rzz/ng-frame"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.5.0",
