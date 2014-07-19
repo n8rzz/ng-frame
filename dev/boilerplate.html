@@ -40,7 +40,7 @@
 				<li><a href="index.html">index</a></li>
 				<li class="active"><a href="post.html">post</a></li>
 				<li><a href="category.html">category / archive</a></li>
-<!-- -->				<li class="dropdown">
+				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">dropdown <b class="caret"></b></a>
 					<ul class="dropdown-menu">
 						<li><a href="boilerplate.html">Boilerplate</a></li>
@@ -71,9 +71,18 @@
 <div class="container">	
 	<div class="row">
 	  
-	  <div class="col-sm-12 col-lg-9 col-lg-offset-2">  		
+	  <div class="col-sm-12 col-lg-9 col-lg-offset-2">
 		<article class="text-left">
-			
+			<h3><span class="badge">New</span> Post Title <small>posted on: {date} 06/27/2014</small></h3>
+			<h3>Post Title <small>posted on: {date} 06/27/2014</small></h3>
+			<p> 
+			sit amet meatloaf beef ribs ribeye hamburger shankle turducken swine salami leberkas prosciutto. Strip steak tri-tip leberkas flank, ham salami kevin drumstick shoulder corned beef pork chop. Sausage short ribs venison beef ribs, pork biltong sirloin shank chicken flank beef landjaeger strip steak ham hock. Sirloin bresaola bacon, filet mignon turkey doner jowl salami spare... <a href="#">Read More</a>
+			</p> 
+		</article>	
+
+		<hr />
+
+		<article class="text-left">
 			<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
             <hr>
             <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -149,33 +158,6 @@
 			
             <h4>Bootstrap helpers</h4>
 
-            <p class="text-muted">rump hamburger drumstick fatback beef ribs</p>
-			<p class="text-primary">rump hamburger drumstick fatback beef ribs</p>
-			<p class="text-success">rump hamburger drumstick fatback beef ribs</p>
-			<p class="text-info">rump hamburger drumstick fatback beef ribs</p>
-			<p class="text-warning">rump hamburger drumstick fatback beef ribs</p>
-			<p class="text-danger">rump hamburger drumstick fatback beef ribs</p>
-			<p class="bg-primary">rump hamburger drumstick fatback beef ribs</p>
-			<p class="bg-success">rump hamburger drumstick fatback beef ribs</p>
-			<p class="bg-info">rump hamburger drumstick fatback beef ribs</p>
-			<p class="bg-warning">rump hamburger drumstick fatback beef ribs</p>
-			<p class="bg-danger">rump hamburger drumstick fatback beef ribs</p>
-
-			<!-- Standard button -->
-			<button type="button" class="btn btn-default">Default</button>
-			<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-			<button type="button" class="btn btn-primary">Primary</button>
-			<!-- Indicates a successful or positive action -->
-			<button type="button" class="btn btn-success">Success</button>
-			<!-- Contextual button for informational alert messages -->
-			<button type="button" class="btn btn-info">Info</button>
-			<!-- Indicates caution should be taken with this action -->
-			<button type="button" class="btn btn-warning">Warning</button>
-			<!-- Indicates a dangerous or potentially negative action -->
-			<button type="button" class="btn btn-danger">Danger</button>
-			<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-			<button type="button" class="btn btn-link">Link</button>
-
             <div class="text-center">
 	            <img src="http://www.fillmurray.com/140/140" alt="" class="img-thumbnail" />
 	            <img src="http://www.fillmurray.com/140/140" alt="" class="img-thumbnail" />
@@ -184,6 +166,54 @@
 	            <img src="http://www.fillmurray.com/140/140" alt="" class="img-thumbnail" />
 	            <img src="http://www.fillmurray.com/140/140" alt="" class="img-thumbnail" />
             </div>
+
+            <hr />
+
+            <p class="text-muted">rump hamburger drumstick fatback beef ribs</p>
+			<p class="text-primary">rump hamburger drumstick fatback beef ribs</p>
+			<p class="text-success">rump hamburger drumstick fatback beef ribs</p>
+			<p class="text-info">rump hamburger drumstick fatback beef ribs</p>
+			<p class="text-warning">rump hamburger drumstick fatback beef ribs</p>
+			<p class="text-danger">rump hamburger drumstick fatback beef ribs</p>
+
+			<hr />
+
+			<p class="bg-primary">rump hamburger drumstick fatback beef ribs</p>
+			<p class="bg-success">rump hamburger drumstick fatback beef ribs</p>
+			<p class="bg-info">rump hamburger drumstick fatback beef ribs</p>
+			<p class="bg-warning">rump hamburger drumstick fatback beef ribs</p>
+			<p class="bg-danger">rump hamburger drumstick fatback beef ribs</p>
+
+			<hr />
+
+			<!-- Standard button -->
+			<button type="button" class="btn btn-default">Default</button>
+
+			<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+			<button type="button" class="btn btn-primary">Primary</button>
+
+			<!-- Indicates a successful or positive action -->
+			<button type="button" class="btn btn-success">Success</button>
+
+			<!-- Contextual button for informational alert messages -->
+			<button type="button" class="btn btn-info">Info</button>
+
+			<!-- Indicates caution should be taken with this action -->
+			<button type="button" class="btn btn-warning">Warning</button>
+
+			<!-- Indicates a dangerous or potentially negative action -->
+			<button type="button" class="btn btn-danger">Danger</button>
+
+			<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+			<button type="button" class="btn btn-link">Link</button>
+
+			<hr />	
+
+			<ul class="pager">
+			  <li class="previous disabled"><a href="#">&larr; Older</a></li>
+			  <li class="next"><a href="#">Newer &rarr;</a></li>
+			</ul>
+
 		</article>
 
 <!-- related posts -->
@@ -199,11 +229,6 @@
 			</ul>
 		</div> -->
 <!-- /.post-references -->
-
-			<ul class="pager">
-			  <li class="previous disabled"><a href="#">&larr; Older</a></li>
-			  <li class="next"><a href="#">Newer &rarr;</a></li>
-			</ul>
   		</div><!-- /.col-xs-12 col-m-12 -->
 
 	</div><!-- /.row -->
@@ -212,11 +237,11 @@
 <div class="container-fluid text-center blog-author-meta">
 	<div class="row">
 		<div class="col-xs-12 col-sm-6">
+			<p class="blog-post-meta-category">posted on: {date} 06/27/2014, category: <a href="#">{category}</a></p>
+		</div><!-- /.col-sm-12 col-md-6 -->			
+		<div class="col-xs-12 col-sm-6">
 			<p class="blog-post-meta-tags"><a href="#">tag</a>, <a href="#">tag</a>, <a href="#">tag</a></p>
 		</div><!-- /.col-sm-12 col-md-6 -->	
-		<div class="col-xs-12 col-sm-6">
-			<p class="blog-post-meta-category">posted on: {date} 06/27/2014, category: <a href="#">{category}</a></p>
-		</div><!-- /.col-sm-12 col-md-6 -->
 	</div><!-- /.row -->
 
 	<div class="row">
@@ -242,7 +267,7 @@
 			<ol class="commentlist">
 				<li>
 					<article class="comment">
-						<img src="http://www.fillmurray.com/100/100" class="avatar" />
+						<img src="http://www.fillmurray.com/50/50" class="avatar" />
 						<span class="comment-name">comment {name}</span> on <span class="comment-date">2/29/2000</span>
 						<div class="comment-content">
 							<p>Brisket bresaola andouille pork loin, spare ribs shoulder tail tri-tip beef <a href="#">tongue shank</a>a. Turducken pork belly brisket jowl spare ribs venison boudin short ribs capicola. Hamburger fatback ball tip, flank ground round chuck corned beef landjaeger pastrami capicola biltong sausage shoulder kevin pig.</p>
@@ -251,7 +276,7 @@
 				</li>
 				<li>
 					<article class="comment">
-						<img src="http://www.fillmurray.com/100/100" class="avatar" />
+						<img src="http://www.fillmurray.com/75/75" class="avatar" />
 						<span class="comment-name">comment {name}</span> on <span class="comment-date">2/29/2000</span>
 						<div class="comment-content">
 							<p>Brisket bresaola andouille pork loin, spare ribs shoulder tail tri-tip beef <a href="#">tongue shank</a>a. Turducken pork belly brisket jowl spare ribs venison boudin short ribs capicola. Hamburger fatback ball tip, flank ground round chuck corned beef landjaeger pastrami capicola biltong sausage shoulder kevin pig.</p>
@@ -273,33 +298,10 @@
 	</div><!-- /.row -->	
 </div><!-- /.container-fluid -->
 
-<footer class="container-fluid">
+<footer class="container-fluid text-center">
 	<div class="row">
 		<div class="col-md-12 top-footer">
-			<div class="col-sm-4">
-				<h6>Foot Header</h6>
-				<ul>
-					<li><a href="#">footer link</a></li>
-					<li><a href="#">footer link</a></li>
-					<li><a href="#">footer link</a></li>
-					<li><a href="#">footer link</a></li>
-					<li><a href="#">footer link</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-4">
-				<h6>Foot Header</h6>
-				<ul>
-					<li><a href="#">footer link</a></li>
-					<li><a href="#">footer link</a></li>
-					<li><a href="#">footer link</a></li>
-					<li><a href="#">footer link</a></li>
-					<li><a href="#">footer link</a></li>
-					<li><a href="#">footer link</a></li>
-					<li><a href="#">footer link</a></li>
-					<li><a href="#">footer link</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-4">R</div>
+			<p>footer small menu</p>
 		</div>
 	</div><!-- /.row -->
 	
