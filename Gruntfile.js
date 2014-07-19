@@ -127,10 +127,11 @@ module.exports = function(grunt) {
                     useShortDoctype: true
                 },
                 files: {
-                	'<%= config.dist %>/index.html' : '<%= config.dev %>/index.html',
-                	'<%= config.dist %>/post.html' : '<%= config.dev %>/post.html',
-                	'<%= config.dist %>/page.html' : '<%= config.dev %>/page.html',
-                	'<%= config.dist %>/category.html' : '<%= config.dev %>/category.html'
+					'<%= config.dist %>/boilerplate.html' : '<%= config.dev %>/biolerplate.html',
+//                	'<%= config.dist %>/index.html' : '<%= config.dev %>/index.html',
+//                	'<%= config.dist %>/post.html' : '<%= config.dev %>/post.html',
+//                	'<%= config.dist %>/page.html' : '<%= config.dev %>/page.html',
+//                	'<%= config.dist %>/category.html' : '<%= config.dev %>/category.html'
                 }
 			}
 		}

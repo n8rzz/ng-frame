@@ -2,7 +2,7 @@
 	padding: 2em 0 2em 2em;
 	font-size: $xsm-txt;
 	line-height: 1.3em;
-	background: $basic-green;
+	background: $medium-green;
 	border-bottom: 1px solid $dark-dark-blue;
 }
 
@@ -12,15 +12,17 @@ ol.commentlist {list-style-type: none;}
 ol.commentlist li {}
 article.comment {
 	width: 90%;
-	border: 1px solid $light-light-grey;
+	padding-right: 1.25em;
+	padding-left: 1.25em;
+	background: $basic-green;
+	@include border-radius(8px);
 	img.avatar {
-		padding-right: 1em;
+		margin: 1em 0;
+		padding-right: 0.5em;
 	}
 }
-img.avatar {}
+article.comment p {}
+article.comment p a {}
 span.comment-name {}
 span.comment-date {}
 div.comment-content {}
-article.comment {}
-article.comment p {}
-article.comment p a {}
