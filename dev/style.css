@@ -8,7 +8,11 @@
 /*	google sans fonts 	https://www.google.com/fonts#UsePlace:use/Collection:PT+Sans+Narrow|Quicksand:400,700|Ubuntu|Josefin+Sans|Oxygen:400,700 */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Quicksand:400,700|Ubuntu|Josefin+Sans|Oxygen:400,700);
 /* sans-serif */
+/* variables #################### */
 /*-- fonts --*/
+/* /variables #################### */
+/* mixins.scss #################### */
+/* /mixins.scss #################### */
 /* layout.scss #################### */
 body {
   font-family: "Ubuntu", sans-serif;
@@ -67,7 +71,7 @@ hr {
 footer {
   background: #1c2c46;
   font-family: "Quicksand", sans-serif;
-  font-size: 0.9em; }
+  font-size: 12px; }
 
 footer p {
   padding: 1em 0; }
@@ -104,6 +108,16 @@ footer p {
         background-color: #2c4770; }
 
 /*-- body styles --*/
+.jumbotron {
+  margin-bottom: 0; }
+
+.badge {
+  padding: 4px 9px !important;
+  background: #4c976d;
+  font-family: "Oxygen", sans-serif;
+  color: #fff;
+  vertical-align: middle !important; }
+
 ul.pager {
   font-size: 14px; }
 
@@ -137,16 +151,6 @@ ul.pager {
 
 /* /header.scss #################### */
 /* content.scss #################### */
-.jumbotron {
-  margin-bottom: 0; }
-
-.badge {
-  padding: 4px 9px !important;
-  background: #4c976d;
-  font-family: "Oxygen", sans-serif;
-  color: #fff;
-  vertical-align: middle !important; }
-
 .blog-author-meta {
   padding-top: 1em;
   padding-bottom: 3em;
@@ -192,14 +196,15 @@ footer.post-author-meta {
 #sidebar {
   margin-top: 3em;
   padding: 0.5em;
-  font-size: 0.7em;
+  font-size: 12px;
   font-family: "Oxygen", sans-serif;
   line-height: 1.3em;
   border: 1px solid #0f5b30; }
 
+/* comments.scss #################### */
 .comments-container {
   padding: 2em 0 2em 2em;
-  font-size: 0.9em;
+  font-size: 12px;
   line-height: 1.3em;
   background: #4c976d;
   border-bottom: 1px solid #052354; }
@@ -220,16 +225,17 @@ article.comment {
     margin: 1em 0;
     padding-right: 0.5em; }
 
+/* /comments.scss #################### */
 /* footer.scss #################### */
 .top-footer {
-  height: 10em;
+  min-height: 10em;
   background: #2c4770;
-  color: white; }
+  color: white;
+  overflow: auto; }
 
 .bottom-footer {
   color: white; }
-
-.bottom-footer p {
-  padding: 0; }
+  .bottom-footer p {
+    padding: 0; }
 
 /* /footer.scss #################### */

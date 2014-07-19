@@ -53,6 +53,16 @@
 } // .navbar-default
 
 /*-- body styles --*/
+.jumbotron {margin-bottom: 0;}
+
+.badge {
+	padding: 4px 9px !important;
+	background: $medium-green;
+	font-family: $oxygen;
+	color: #fff;
+	vertical-align: middle !important;
+}
+
 ul.pager {
 	font-size: 14px;
 }
