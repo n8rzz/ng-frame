@@ -118,23 +118,23 @@ module.exports = function(grunt) {
 //			css: [],
 //		},
 
-		htmlmin: {
-			dist: {
-				options: {
-                    collapseBooleanAttributes: true,
-                    collapseWhitespace: true,
-                    removeCommentsFromCDATA: true,
-                    useShortDoctype: true
-                },
-                files: {
-					'<%= config.dist %>/boilerplate.html' : '<%= config.dev %>/biolerplate.html',
+//		htmlmin: {
+//			dist: {
+//				options: {
+//                    collapseBooleanAttributes: true,
+//                    collapseWhitespace: true,
+//                    removeCommentsFromCDATA: true,
+//                    useShortDoctype: true
+//                },
+//                files: {
+//					'<%= config.dist %>/boilerplate.html' : '<%= config.dev %>/biolerplate.html',
 //                	'<%= config.dist %>/index.html' : '<%= config.dev %>/index.html',
 //                	'<%= config.dist %>/post.html' : '<%= config.dev %>/post.html',
 //                	'<%= config.dist %>/page.html' : '<%= config.dev %>/page.html',
 //                	'<%= config.dist %>/category.html' : '<%= config.dev %>/category.html'
-                }
-			}
-		}
+//                }
+//			}
+//		}
 	});
 
 	grunt.registerTask('default', [ 'watch' ]);
@@ -156,6 +156,6 @@ module.exports = function(grunt) {
 		'copy:build',
 //		'useminPrepare',
 //		'usemin',
-		'htmlmin'
+//		'htmlmin'
 	]);
 }
