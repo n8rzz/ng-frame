@@ -5,9 +5,16 @@ module.exports = function(grunt) {
     require('time-grunt')(grunt);
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
+	var config = {
+		dev: 'dev',
+		dist: 'dist'
+	}
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		
+		config: config,
+
 		express: {
 			all: {
 				options: {
@@ -19,6 +26,13 @@ module.exports = function(grunt) {
 			}
 		},
 		clean: {
+			bower: {
+				src: [
+					'dev/styles/vendor/**',
+					'dev/js/vendor/**',
+					'dev/fonts/**'
+				]
+			},
 			sass: {
 				src: [
 					'.sass-cache',
@@ -26,21 +40,42 @@ module.exports = function(grunt) {
 				]
 			},
 			build: {
-				src: 'dist/**/*{.html,.css}'
+				src: 'dist/**/*'
 			}
 		},
 		copy: {
 			bower: {
 				files: [{
-					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/*',
-					src: 'dev/styles/',
+					expand: true,
+					cwd: 'bower_components/bootstrap-sass-official/assets/stylesheets/',
+					src: '**',
+					dest: 'dev/styles/vendor/'
 				},
 				{
-					cwd: 'bower_components/bootstrap-sass-official/vendor/assets/fonts/*',
-					src: 'dev/fonts'
+					expand: true,
+					cwd: 'bower_components/bootstrap-sass-official/assets/fonts/',
+					src: '**',
+					dest: 'dev/fonts/'
+				},
+				{
+					expand: true,
+					cwd: 'bower_components/bootstrap-sass-official/assets/javascripts/',
+					src: '**',
+					dest: 'dev/js/vendor/',
+					flatten: true		
+				}]
+			},
+			build: {
+				files: [{
+					expand: true,
+					cwd: '<%= config.dev %>',
+					dest: '<%= config.dist %>',
+					src: [
+						'*.{html,css}'
+					]
 				}]
 			}	
-		},
+		}, 
 		sass: {
 			dist: {
 				files: {
@@ -67,12 +102,45 @@ module.exports = function(grunt) {
 			all: {
 				path: 'http://localhost:<%= express.all.options.port%>/index.html'
 			}
-		}
+		},
+
+/*		useminPrepare: {
+			options: {
+				dest: '<%= config.dist %>'
+			},
+			html: '<%= config.dev %>',
+		},
+		usemin: {
+			options: {
+				assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images' ]
+			},
+*/ //			html: ['<%= config.dist %>/{,*/}*.html'],
+//			css: [],
+//		},
+
+//		htmlmin: {
+//			dist: {
+//				options: {
+//                    collapseBooleanAttributes: true,
+//                    collapseWhitespace: true,
+//                    removeCommentsFromCDATA: true,
+//                    useShortDoctype: true
+//                },
+//                files: {
+//					'<%= config.dist %>/boilerplate.html' : '<%= config.dev %>/biolerplate.html',
+//                	'<%= config.dist %>/index.html' : '<%= config.dev %>/index.html',
+//                	'<%= config.dist %>/post.html' : '<%= config.dev %>/post.html',
+//                	'<%= config.dist %>/page.html' : '<%= config.dev %>/page.html',
+//                	'<%= config.dist %>/category.html' : '<%= config.dev %>/category.html'
+//                }
+//			}
+//		}
 	});
 
 	grunt.registerTask('default', [ 'watch' ]);
 	
 	grunt.registerTask('bower-build', [ 
+		'clean:bower',
 		'copy:bower',
 		'sass'
 	]);
@@ -83,8 +151,11 @@ module.exports = function(grunt) {
 		'watch'
 	])
 	
-	grunt.registerTask('dist', [
+	grunt.registerTask('build', [
 		'clean:build',
-		'copy:build'
+		'copy:build',
+//		'useminPrepare',
+//		'usemin',
+//		'htmlmin'
 	]);
 }
