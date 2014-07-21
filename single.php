@@ -17,6 +17,14 @@
 			  
 			  <div class="col-sm-12 col-lg-9 col-lg-offset-2">  		
 				<article class="text-left">
+					<?php 
+					if ( has_post_thumbnail() ) {
+						the_post_thumbnail(
+							'ng-frame-featured-thumbnail',
+							array('class' => 'img-responsive'));
+					}
+					?>
+
 					<?php the_content(); ?>
 				</article>
 

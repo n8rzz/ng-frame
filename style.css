@@ -169,6 +169,10 @@ ul.pager {
 	float: right !important;
 }
 */
+.wp-post-image {
+  margin: 0 auto;
+  padding-bottom: 1.5em; }
+
 .wp-caption-text {
   font-size: 16px;
   color: #79b694;
