@@ -1,4 +1,23 @@
 /* content.scss #################### */
+/*
+.alignleft {
+	float: left !important;
+}
+
+.alignright {
+	float: right !important;
+}
+*/
+
+.wp-caption-text {
+	font-size: $xsm-txt;
+	color: $basic-green;
+	font-style: italic;
+}
+
+
+
+
 .blog-author-meta {
 	padding-top: 1em;
 	padding-bottom: 3em;

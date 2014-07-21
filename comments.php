@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="col-md-12 comments-container">
 			<h4>Comments</h4>
-			<p class="post-comments">{Post Title} has 77 comments</p>
+			<p class="post-comments"><?php the_title(); ?> has {x} comments</p>
 			<ol class="commentlist">
 				<li>
 					<article class="comment">

@@ -20,9 +20,7 @@
 			<article class="text-left">
 				<h3><span class="badge">New</span> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br />
 				<small>posted on: <?php the_date(); ?></small></h3>
-				<p> 
-					<?php the_excerpt(); ?>
-				</p> 
+					<?php the_excerpt(); ?> 
 			</article>	
 
 			<hr />

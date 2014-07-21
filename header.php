@@ -23,7 +23,8 @@
 
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+
 <nav class="navbar navbar-default" role="navigation">
 	<div class="container-fluid">
 	    <div class="navbar-header">
@@ -32,29 +33,20 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">n8g.com</a>
+	      <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
 	    </div><!-- /.navbar-header -->
 
-		<div class="collapse navbar-collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="index.html">index</a></li>
-				<li><a href="post.html">post</a></li>
-				<li><a href="category.html">category / archive</a></li>
-<!-- -->				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">dropdown <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						<li class="divider"></li>
-						<li><a href="#">One more separated link</a></li>
-					</ul>
-				</li>
-				<li><a href="page.html">page</a></li>
-				<li><a href="contact">contact</a></li>
-			</ul>
-		</div><!-- /.collapse navbar-collapse -->
+		<?php
+            wp_nav_menu( array(
+                'menu'              => 'primary',
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+                'menu_class'        => 'nav navbar-nav navbar-right',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            );
+        ?>
 	</div><!-- /.container-fluid -->
 </nav><!-- /.navbar navbar-default -->

@@ -51,10 +51,10 @@
 <div class="container-fluid text-center blog-author-meta">
 	<div class="row">
 		<div class="col-xs-12 col-sm-6">
-			<p class="blog-post-meta-tags"><?php echo get_the_tag_list('<p>Tags: ',', ','</p>'); ?></p>
+			<?php echo get_the_tag_list('<p class="blog-post-meta-tags">Tags: ',', ','</p>'); ?>
 		</div><!-- /.col-sm-12 col-md-6 -->	
 		<div class="col-xs-12 col-sm-6">
-			<p class="blog-post-meta-category">posted on: <?php the_date(); ?>, category: <?php the_category(', '); ?></a></p>
+			<p class="blog-post-meta-category">posted on: {date}, category: <?php the_category(', '); ?></a></p>
 		</div><!-- /.col-sm-12 col-md-6 -->
 	</div><!-- /.row -->
 

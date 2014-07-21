@@ -45,6 +45,8 @@ h2 {
 
 h3 {
   font-size: 51px; }
+  h3 a {
+    font-size: 40px; }
 
 h4 {
   font-size: 44px; }
@@ -59,11 +61,11 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 45%; }
 
 article {
-  margin-top: 2em;
-  padding: 0.5em 0em 2em 1em; }
+  margin-top: 1em;
+  padding: 0.5em 0em 1em 1em; }
   article h3,
   article h4 {
-    margin-top: 1em; }
+    margin-top: 0.5em; }
   article small {
     font-family: "Ubuntu", sans-serif; }
   article img {
@@ -71,15 +73,15 @@ article {
 
 hr {
   width: 75%;
-  margin-top: 3em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   border-top: 1px dashed #aaa; }
 
 /* /layout.scss #################### */
 footer {
   background: #1c2c46;
   font-family: "Quicksand", sans-serif;
-  font-size: 12px; }
+  font-size: 16px; }
 
 footer p {
   padding: 1em 0; }
@@ -149,7 +151,6 @@ ul.pager {
 .primary-header {
   min-height: 275px;
   background: #1c2c46;
-  background-image: url("images/500-circle.png");
   background-position: center center;
   background-repeat: no-repeat;
   color: #7689a9; }
@@ -159,6 +160,20 @@ ul.pager {
 
 /* /header.scss #################### */
 /* content.scss #################### */
+/*
+.alignleft {
+	float: left !important;
+}
+
+.alignright {
+	float: right !important;
+}
+*/
+.wp-caption-text {
+  font-size: 16px;
+  color: #79b694;
+  font-style: italic; }
+
 .blog-author-meta {
   padding-top: 1em;
   padding-bottom: 3em;
@@ -204,7 +219,7 @@ footer.post-author-meta {
 #sidebar {
   margin-top: 3em;
   padding: 0.5em;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Oxygen", sans-serif;
   line-height: 1.3em;
   border: 1px solid #0f5b30; }
@@ -212,7 +227,7 @@ footer.post-author-meta {
 /* comments.scss #################### */
 .comments-container {
   padding: 2em 0 2em 2em;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.3em;
   background: #4c976d;
   border-bottom: 1px solid #052354; }
@@ -244,6 +259,7 @@ article.comment {
 .bottom-footer {
   color: white; }
   .bottom-footer p {
-    padding: 0; }
+    padding-top: 1em;
+    padding-bottom: 0.5em; }
 
 /* /footer.scss #################### */

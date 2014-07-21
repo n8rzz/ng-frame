@@ -1,13 +1,13 @@
 <footer class="container-fluid text-center">
 	<div class="row">
 		<div class="col-md-12 top-footer">
-			<p>footer small menu</p>
+			
 		</div><!-- /.top-footer -->
 	</div><!-- /.row -->
 	
 	<div class="row">
 		<div class="col-md-12 bottom-footer">
-			<p><small>footer small copy text and notes</small></p>
+			<p><small>designed by @n8rzz</small></p>
 		</div><!-- /.bottom-footer -->		
 	</div><!-- /.row -->
 </footer>
