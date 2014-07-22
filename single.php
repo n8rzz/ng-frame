@@ -94,13 +94,27 @@
 				<p><?php the_author_meta( 'description' ); ?></p>
 				
 				<ul class="social-links">
-					<li><a href="">tumblr </a></li>	
-					<li><a href="">twitter </a></li>	
-					<li><a href="">github </a></li>	
-					<li><a href="">instagram </a></li>	
-					<li><a href="">google+ </a></li>	
-					<li><a href="">rss </a></li>	
-					<li><a href="">email </a></li>	
+					<li>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icons/tumblr.png" /></a>
+					</li>	
+					<li>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icons/twitter.png" /> </a>
+					</li>	
+					<li>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icons/github.png" /></a>
+					</li>	
+					<li>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icons/instagram.png" /></a>
+					</li>	
+					<li>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icons/gplus2.png" /></a>
+					</li>	
+					<li>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icons/rss.png" /></a>
+					</li>	
+					<li>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icons/email.png" /></a>
+					</li>	
 				</ul>
 			</footer>
 		</div><!-- /.col-md-12 -->	
