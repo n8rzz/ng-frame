@@ -20,6 +20,31 @@
 }
 
 
+.ng-frame-pager {
+	padding-top: 1em;
+	padding-bottom: 2.75em;
+	border-bottom: 2px dashed $light-blue-green;
+	.col-sm-5 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	a {
+		width: 100%;
+		height: 100%;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		display: block;
+		background: $light-light-grey;
+		font-family: $nav-font;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $basic-green;
+			text-decoration: none;
+			background-color: $slight-light-blue;
+		}
+	}
+}
 
 
 .blog-author-meta {
@@ -34,7 +59,7 @@ p.blog-post-meta-category {
 }
 p.blog-post-meta-tags {
 	font-size: 70%;
-	color: $light-blue;	
+//	color: $light-blue;	
 }
 p.blog-post-meta-category a, p.blog-post-meta-tags a {
 	color: $light-blue;
