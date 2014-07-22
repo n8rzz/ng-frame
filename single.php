@@ -26,6 +26,7 @@
 					?>
 
 					<?php the_content(); ?>
+
 				</article>
 
 <!-- related posts 
@@ -43,17 +44,28 @@
 		</div> -->
 <!-- /.post-references -->
 
-
+<!--
 			<ul class="pager">
 			  <li class="previous"><a href="#">&larr; Older</a></li>
 			  <li class="next"><a href="#">Newer &rarr;</a></li>
 			</ul>
-
-			<?php /* bootstrap_wp_pager(); */ ?>
-  		
+-->
   		</div><!-- /.col-xs-12 col-m-12 -->
 	</div><!-- /.row -->
 </div><!-- /.container -->
+
+
+<?php /*	NG-FRAME-PAGER		*/ ?>
+<div class="container-fluid">
+	<div class="row ng-frame-pager text-center">
+		<div class="col-xs-6 col-sm-5">
+			<?php previous_post_link('%link'); ?>
+		</div><!-- /.col-md-6 -->
+		<div class="col-xs-6 col-sm-5 col-sm-offset-2">
+			<?php next_post_link('%link'); ?>
+		</div><!-- /.col-md-6 -->		
+	</div><!-- /.row -->
+</div><!-- /.container-fluid -->
 
 <!-- POST META -->
 <div class="container-fluid text-center blog-author-meta">
