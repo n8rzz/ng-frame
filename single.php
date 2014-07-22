@@ -68,24 +68,40 @@
 </div><!-- /.container-fluid -->
 
 <!-- POST META -->
-<div class="container-fluid text-center blog-author-meta">
+<div class="container-fluid text-center blog-post-meta">
 	<div class="row">
-		<div class="col-xs-12 col-sm-6">
+		<div class="col-xs-12 col-sm-4">
+			<p class="blog-post-meta-date">
+				posted on: <?php the_time( get_option( 'date_format' ) ); ?>
+			</p>
+		</div><!-- /.col-sm-12 col-md-4 -->
+		<div class="col-xs-12 col-sm-4">
 			<?php echo get_the_tag_list('<p class="blog-post-meta-tags">Tags: ',', ','</p>'); ?>
-		</div><!-- /.col-sm-12 col-md-6 -->	
-		<div class="col-xs-12 col-sm-6">
-			<p class="blog-post-meta-category">posted on: {date}, category: <?php the_category(', '); ?></a></p>
-		</div><!-- /.col-sm-12 col-md-6 -->
+		</div><!-- /.col-sm-12 col-md-4 -->	
+		<div class="col-xs-12 col-sm-4">
+			<p class="blog-post-meta-category">
+				category: <?php the_category(', '); ?>
+			</p>
+		</div><!-- /.col-sm-12 col-md-4 -->	
 	</div><!-- /.row -->
 
 <!-- AUTHOR META -->
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">		
-			<footer class="post-author-meta">
+			<footer class="post-author-meta text-left">
 				<img class="img-circle pull-right" src="http://www.fillmurray.com/150/150" />
-				<h4>Author Title</h4>
-				<p class="text-left">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
-				<div class="social-links">social links</div>
+				<h4><?php the_author_meta( 'display_name' ); ?></h4>
+				<p><?php the_author_meta( 'description' ); ?></p>
+				
+				<ul class="social-links">
+					<li><a href="">tumblr </a></li>	
+					<li><a href="">twitter </a></li>	
+					<li><a href="">github </a></li>	
+					<li><a href="">instagram </a></li>	
+					<li><a href="">google+ </a></li>	
+					<li><a href="">rss </a></li>	
+					<li><a href="">email </a></li>	
+				</ul>
 			</footer>
 		</div><!-- /.col-md-12 -->	
 
