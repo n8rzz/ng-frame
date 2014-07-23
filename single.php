@@ -50,11 +50,11 @@
 			  <li class="previous"><a href="#">&larr; Older</a></li>
 			  <li class="next"><a href="#">Newer &rarr;</a></li>
 			</ul>
--->
+-->*/ ?>
   		</div><!-- /.col-xs-12 col-m-12 -->
 	</div><!-- /.row -->
 </div><!-- /.container -->
-*/ ?>
+
 
 <?php /*	NG-FRAME-PAGER		*/ ?>
 <div class="container-fluid">
@@ -91,7 +91,7 @@
 		<div class="col-md-10 col-md-offset-1">		
 			<footer class="post-author-meta text-left">
 				<img class="img-circle pull-right" src="http://www.fillmurray.com/150/150" />
-				<h4><?php the_author_meta( 'display_name' ); ?></h4>
+				<h4><?php the_author_posts_link(); ?></h4>
 				<p><?php the_author_meta( 'description' ); ?></p>
 				
 				<ul class="social-links">
