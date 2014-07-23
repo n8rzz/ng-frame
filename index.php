@@ -8,8 +8,6 @@
 </div><!-- /.jumbotron -->
 
 
-
-
 <div class="container">	
 	<div class="row">
 	  <div class="col-md-12">
@@ -29,9 +27,9 @@
 		<?php else : ?>
 		<?php endif; ?>
 			
-		</div><!-- /.col-md-12 -->	  
-	</div><!-- /.row -->
-</div><!-- /.container-fluid -->
+		</div><?php /*<!-- /.col-md-12 -->*/ ?>
+	</div><?php /*<!-- /.row -->*/ ?>
+</div><?php /*<!-- /.container-fluid -->*/ ?>
 
 
 <div class="container-fluid text-center">
@@ -39,8 +37,8 @@
 		
 		<?php wp_pagenavi(); ?>
 
-	</div><!-- /.row -->
-</div><!-- /.container-fluid -->
+	</div><?php /*<!-- /.row -->*/ ?>
+</div><?php /*<!-- /.container-fluid -->*/ ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

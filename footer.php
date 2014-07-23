@@ -2,14 +2,14 @@
 	<div class="row">
 		<div class="col-md-12 top-footer">
 			
-		</div><!-- /.top-footer -->
-	</div><!-- /.row -->
+		</div><?php /*<!-- /.top-footer -->*/ ?>
+	</div><?php /*<!-- /.row -->*/ ?>
 	
 	<div class="row">
 		<div class="col-md-12 bottom-footer">
 			<p><small>designed by @n8rzz</small></p>
-		</div><!-- /.bottom-footer -->		
-	</div><!-- /.row -->
+		</div><?php /*<!-- /.bottom-footer -->*/ ?>
+	</div><?php /*<!-- /.row -->*/ ?>
 </footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -34,7 +34,7 @@
 	        <span class="icon-bar"></span>
 	      </button>
 	      <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-	    </div><!-- /.navbar-header -->
+	    </div><?php /*<!-- /.navbar-header -->*/ ?>
 
 		<?php
             wp_nav_menu( array(
@@ -48,5 +48,5 @@
                 'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
-	</div><!-- /.container-fluid -->
-</nav><!-- /.navbar navbar-default -->
+	</div><?php /*<!-- /.container-fluid -->*/ ?>
+</nav><?php /*<!-- /.navbar navbar-default -->*/ ?>
