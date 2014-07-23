@@ -6,8 +6,8 @@
 		<div class="container-fluid jumbotron primary-header text-center">	
 			<div class="row">
 				<h1><?php the_title() ?></h1>
-			</div><!-- /.row -->
-		</div><!-- /.jumbotron -->
+			</div><?php /*<!-- /.row -->*/ ?>
+		</div><?php /*<!-- /.jumbotron -->*/ ?>
 
 		<div class="container">	
 			<div class="row">
@@ -18,10 +18,10 @@
 					<?php the_content(); ?>
 
 				</article>
-		  		</div><!-- /.col-md-12 -->
+		  		</div><?php /*<!-- /.col-md-12 -->*/ ?>
 
-			</div><!-- /.row -->
-		</div><!-- /.container -->
+			</div><?php /*<!-- /.row -->*/ ?>
+		</div><?php /*<!-- /.container -->*/ ?>
 
 		<?php endwhile; ?>
 	<?php else : ?>

@@ -9,8 +9,8 @@
 				 	<small><?php the_date(); ?></small>
 				</h1>
 
-			</div><!-- /.row -->
-		</div><!-- /.jumbotron -->
+			</div><?php /*<!-- /.row -->*/ ?>
+		</div><?php /*<!-- /.jumbotron -->*/ ?>
 
 		<div class="container">	
 			<div class="row">
@@ -33,6 +33,7 @@
 		<div class="col-md-12 text-center">related posts</div>
 -->
 
+<?php /*
 <!-- FUTURE POST REFERENCES -->
 <!-- plugin, use shortcodes -->
 <!--		<div class="post-references">
@@ -53,39 +54,39 @@
   		</div><!-- /.col-xs-12 col-m-12 -->
 	</div><!-- /.row -->
 </div><!-- /.container -->
-
+*/ ?>
 
 <?php /*	NG-FRAME-PAGER		*/ ?>
 <div class="container-fluid">
 	<div class="row ng-frame-pager text-center">
 		<div class="col-xs-6 col-sm-5">
 			<?php previous_post_link('%link'); ?>
-		</div><!-- /.col-md-6 -->
+		</div><?php /*<!-- /.col-md-6 --> */ ?>
 		<div class="col-xs-6 col-sm-5 col-sm-offset-2">
 			<?php next_post_link('%link'); ?>
-		</div><!-- /.col-md-6 -->		
-	</div><!-- /.row -->
-</div><!-- /.container-fluid -->
+		</div><?php /*<!-- /.col-md-6 -->*/ ?>
+	</div><?php /*<!-- /.row -->*/ ?>
+</div><?php /*<!-- /.container-fluid -->*/ ?>
 
-<!-- POST META -->
+<?php /*<!-- POST META -->*/ ?>
 <div class="container-fluid text-center blog-post-meta">
 	<div class="row">
 		<div class="col-xs-12 col-sm-4">
 			<p class="blog-post-meta-date">
 				posted on: <?php the_time( get_option( 'date_format' ) ); ?>
 			</p>
-		</div><!-- /.col-sm-12 col-md-4 -->
+		</div><?php /*<!-- /.col-sm-12 col-md-4 -->*/ ?>
 		<div class="col-xs-12 col-sm-4">
 			<?php echo get_the_tag_list('<p class="blog-post-meta-tags">Tags: ',', ','</p>'); ?>
-		</div><!-- /.col-sm-12 col-md-4 -->	
+		</div><?php /*<!-- /.col-sm-12 col-md-4 -->*/ ?>
 		<div class="col-xs-12 col-sm-4">
 			<p class="blog-post-meta-category">
 				category: <?php the_category(', '); ?>
 			</p>
-		</div><!-- /.col-sm-12 col-md-4 -->	
-	</div><!-- /.row -->
+		</div><?php /*<!-- /.col-sm-12 col-md-4 -->*/ ?>
+	</div><?php /*<!-- /.row -->*/ ?>
 
-<!-- AUTHOR META -->
+<?php /*<!-- AUTHOR META -->*/ ?>
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">		
 			<footer class="post-author-meta text-left">
@@ -117,11 +118,10 @@
 					</li>	
 				</ul>
 			</footer>
-		</div><!-- /.col-md-12 -->	
+		</div><?php /*<!-- /.col-md-12 -->*/ ?>	
 
-	</div><!-- /.row -->
-</div><!-- /.container-fluid -->
-
+	</div><?php /*<!-- /.row -->*/ ?>
+</div><?php /*<!-- /.container-fluid -->*/ ?>
 
 		<?php
             // If comments are open or we have at least one comment, load up the comment template
