@@ -12,7 +12,9 @@
 		    	Archive for <?php echo get_the_date('F Y'); ?>
 		    <?php  } elseif ( is_year() ) { ?>
 		      	Archive for <?php echo get_the_date('Y'); ?>
-		    <?php  } elseif (is_author() ) { ?>
+		    <?php  } elseif ( is_category() ) { ?>
+		    	<?php single_cat_title(); ?> {Category Archive}
+		    <?php  } elseif ( is_author() ) { ?>
 		    	Archive for <?php the_author_meta( 'display_name' ); ?>
 		    <?php } else { ?>
 		      <?php  echo get_queried_object()->name; ?>
