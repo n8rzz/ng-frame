@@ -15,8 +15,8 @@
 		<?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<article class="text-left">
-				<h3><span class="badge">New</span> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br />
+			<article class="text-left" id="post-<?php the_ID(); ?>">
+				<h3><span class="badge">New</span> <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a><br />
 				<small>posted on: <?php the_date(); ?></small></h3>
 					<?php the_excerpt(); ?> 
 			</article>	
