@@ -16,7 +16,7 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<article class="text-left" id="post-<?php the_ID(); ?>">
-				<h3><span class="badge">New</span> <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a><br />
+				<h3><span class="badge">New</span> <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 				<small>posted on: <?php the_date(); ?></small></h3>
 					<section>
 						<?php the_excerpt(); ?>
