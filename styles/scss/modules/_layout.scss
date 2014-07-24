@@ -9,11 +9,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
 	font-size: $h1-size;
-	small {
+	small {display: block;}
+	small,
+	small a {
 		padding-top: .25em;
-		display: block;
 		font-family: $ubuntu;
-		font-size: 18px;
+		font-size: ($h6-size - 2px);
 		color: $medium-green;
 	}
 }
@@ -37,10 +38,22 @@ article {
 	margin-top: 1em; 
 	padding: 0.5em 0em 1em 1em;
 	h3,
-	h4 { margin-top: 0.5em;}
-	small {
-		font-family: $ubuntu;
-//		font-size: 25%;
+	h4 { 
+		margin-top: 0.5em;
+		small,
+		small a {
+			font-family: $ubuntu;
+			font-size: $body-txt;
+		}
+		small a {
+			color: #999;
+			&:hover,
+			&:focus,
+			&:active {
+				color: $light-blue;
+				font-decoration: none;
+			}
+		}
 	}
 	img {
 		margin: 0.5em 1em;
@@ -53,7 +66,6 @@ hr {
 	margin-bottom: 0.5em;
 	border-top: 1px dashed #aaa;
 }
-/* /layout.scss #################### */
 
 footer {
 	background: $dark-blue;
@@ -64,3 +76,5 @@ footer {
 footer p {
 	padding: 1em 0;
 }
+
+/* /layout.scss #################### */

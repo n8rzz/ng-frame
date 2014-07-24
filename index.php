@@ -16,8 +16,9 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<article class="text-left" id="post-<?php the_ID(); ?>">
-				<h3><span class="badge">New</span> <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-				<small>posted on: <?php the_date(); ?></small></h3>
+				<?php /* future new post tag <span class="badge">New</span> */ ?>
+				<h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+				<small>posted: <?php echo ng_frame_date_archive_links(); ?></small></h3>
 					<section>
 						<?php the_excerpt(); ?>
 						<a href="<?php echo get_permalink(); ?>"> Read More...</a>

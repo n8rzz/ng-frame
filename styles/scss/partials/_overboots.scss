@@ -62,7 +62,14 @@
 	color: #fff;
 	vertical-align: middle !important;
 }
-
+ul.pagination {
+	li {
+		.current {
+			background-color: $slight-light-blue;
+			color: $light-light-blue;
+		}
+	}
+}
 ul.pager {
 	font-size: 14px;
 }
