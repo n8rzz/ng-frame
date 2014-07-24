@@ -75,7 +75,7 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-4">
 			<p class="blog-post-meta-date">
-				posted on: <?php the_time( get_option( 'date_format' ) ); ?>
+				posted on: <?php echo ng_frame_date_archive_links(); ?>
 			</p>
 		</div><?php /*<!-- /.col-sm-12 col-md-4 -->*/ ?>
 		<div class="col-xs-12 col-sm-4">
