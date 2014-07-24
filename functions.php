@@ -27,7 +27,8 @@ function ng_frame_theme_setup() {
 	/* add custom filters */
 	add_filter( 'wp_title', 'ng_frame_wp_title', 10, 2 );
 	add_filter( 'user_contactmethods', 'ng_frame_userfields', 10, 1 );
-	add_filter('the_content_more_link', 'remove_more_jump_link', 10, 1 );
+	add_filter( 'the_content_more_link', 'remove_more_jump_link', 10, 1 );
+//	add_filter( 'the_content', 'ng_frame_date_archive_links', 10, 1 );
 }
 
 /*--- ################### ---*/
@@ -103,5 +104,18 @@ function remove_more_jump_link($link) {
 	return $link;
 }
 
+// get archive links for month day, year
+function ng_frame_date_archive_links () {
+	$arc_year = get_the_time('Y');
+	$arc_month = get_the_time('m');
+	$arc_day = get_the_time('d');
+	$out = '';
+
+	$out .= '<a href="' . get_month_link( $arc_year, $arc_month ). '" title="Archive for' . esc_attr( get_the_time( 'F Y' ) ) . '">' . get_the_time( 'F' ) . '</a>';
+	$out .= ' <a href="' . get_day_link( $arc_year, $arc_month, $arc_day ). '" title="Archive for' . esc_attr( get_the_time( 'F d, Y' ) ) . '">' . $arc_day . '</a>';
+	$out .= ', <a href="' . get_year_link( $arc_year ). '" title="Archive for' . esc_attr( get_the_time( 'Y' ) ) . '">' . $arc_year . '</a>';
+
+	return $out;
+}
 
 ?>

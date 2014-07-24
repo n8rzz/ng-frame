@@ -37,9 +37,7 @@
 
 <div class="container-fluid text-center">
 	<div class="row">
-		
 		<?php wp_pagenavi(); ?>
-
 	</div><?php /*<!-- /.row -->*/ ?>
 </div><?php /*<!-- /.container-fluid -->*/ ?>
 
