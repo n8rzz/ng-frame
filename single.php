@@ -17,23 +17,25 @@
 			  
 			  <div class="col-sm-12 col-lg-9 col-lg-offset-2">  		
 				<article class="text-left">
-					<?php 
-					if ( has_post_thumbnail() ) {
-						the_post_thumbnail(
-							'ng-frame-featured-thumbnail',
-							array('class' => 'img-responsive'));
-					}
-					?>
+					<section>
+						<?php 
+						if ( has_post_thumbnail() ) {
+							the_post_thumbnail(
+								'ng-frame-featured-thumbnail',
+								array('class' => 'img-responsive'));
+						}
+						?>
 
-					<?php the_content(); ?>
-
+						<?php the_content(); ?>
+					</section>
 				</article>
 
+<?php /*
+<!-- RELATED POSTS -->
 <!-- related posts 
 		<div class="col-md-12 text-center">related posts</div>
 -->
 
-<?php /*
 <!-- FUTURE POST REFERENCES -->
 <!-- plugin, use shortcodes -->
 <!--		<div class="post-references">
