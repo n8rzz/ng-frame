@@ -1,12 +1,8 @@
-<?php
+<?php 
 
+require_once('admin/ng_frame_enques.php');
 require_once('admin/wp_bootstrap_navwalker.php');
 require_once('admin/bootstrap_utilities.php');
-
-if ( function_exists( 'add_theme_support' ) ) {
-    add_theme_support( 'post-thumbnails' );
-    add_image_size( 'ng-frame-featured-thumbnail', 9999, 300 );
-}
 
 //nav menus
 register_nav_menus( array(
@@ -14,7 +10,40 @@ register_nav_menus( array(
     'footer' => __( 'Footer Menu', 'ng-frame' )
 ) );
 
+add_action( 'after_setup_theme', 'ng_frame_theme_setup' );
+function ng_frame_theme_setup() {
+	
+	/* add theme-supported features */
+	if ( function_exists( 'add_theme_support' ) ) {
+		add_theme_support( 'post-thumbnails' );
+	    add_image_size( 'ng-frame-featured-thumbnail', 9999, 300 );
+    }
 
+	/* add custom actions */
+//	add_action( 'widgets_init', 'ng_frame_register_sidebars' );
+	add_action( 'wp_enqueue_scripts', 'ng_frame_load_javascripts' );
+	add_action( 'admin_menu', 'all_settings_link' );
+
+	/* add custom filters */
+	add_filter( 'wp_title', 'ng_frame_wp_title', 10, 2 );
+	add_filter( 'user_contactmethods', 'ng_frame_userfields', 10, 1 );
+	add_filter('the_content_more_link', 'remove_more_jump_link', 10, 1 );
+}
+
+/*--- ################### ---*/
+
+/*--- ACTIONS ---*/
+//function ng_fame_register_sidebars() { 
+//	/* register sidebars */
+//}
+
+// CUSTOM ADMIN MENU LINK FOR ALL SETTINGS
+function all_settings_link() {
+	add_options_page(__('All Settings'), __('All Settings'), 'administrator', 'options.php');
+}
+
+
+/*--- FILTERS ---*/
 /**
  * Provides a standard format for the page title depending on the view. This is
  * filtered so that plugins can provide alternative title formats.
@@ -34,24 +63,45 @@ function ng_frame_wp_title( $title, $sep ) {
  
 	if ( is_feed() ) {
 		return $title;
-	} // end if
+	}
  
-	// Add the site name.
 	$title .= get_bloginfo( 'name' );
  
 	// Add the site description for the home/front page.
 	$site_description = get_bloginfo( 'description', 'display' );
 	if ( $site_description && ( is_home() || is_front_page() ) ) {
 		$title = "$title $sep $site_description";
-	} // end if
+	}
  
 	// Add a page number if necessary.
 	if ( $paged >= 2 || $page >= 2 ) {
 		$title = sprintf( __( 'Page %s', 'mayer' ), max( $paged, $page ) ) . " $sep $title";
-	} // end if
- 
+	}
 	return $title;
- 
-} // end mayer_wp_title
-add_filter( 'wp_title', 'ng_frame_wp_title', 10, 2 );
+}
+
+// adds social fields on author bio page
+function ng_frame_userfields( $contactmethods ) {
+	// add custom social links
+	$contactmethods['twitter']  	= 'Twitter';
+	$contactmethods['tumblr']		= 'Tumlbr';
+	$contactmethods['github']		= 'Github';
+	$contactmethods['instagram']	= 'Instagram';
+	$contactmethods['google_plus']	= 'Google+';
+	return $contactmethods;
+}
+
+// removes more link jump
+function remove_more_jump_link($link) { 
+	$offset = strpos($link, '#more-');
+	if ($offset) {
+		$end = strpos($link, '"',$offset);
+	}
+	if ($end) {
+		$link = substr_replace($link, '', $offset, $end-$offset);
+	}
+	return $link;
+}
+
+
 ?>
