@@ -16,7 +16,7 @@
 			<div class="row">
 			  
 			  <div class="col-sm-12 col-lg-9 col-lg-offset-2">  		
-				<article class="text-left">
+				<article <?php post_class('text-left'); ?> id="post-<?php the_ID(); ?>">
 					<section>
 						<?php 
 						if ( has_post_thumbnail() ) {

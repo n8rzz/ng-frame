@@ -15,7 +15,7 @@
 		<?php if ( have_posts() ) : ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<article class="text-left" id="post-<?php the_ID(); ?>">
+			<article <?php post_class('text-left'); ?> id="post-<?php the_ID(); ?>">
 				<?php /* future new post tag <span class="badge">New</span> */ ?>
 				<h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 				<small>posted: <?php echo ng_frame_date_archive_links(); ?></small></h3>
