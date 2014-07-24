@@ -1,9 +1,9 @@
 <footer class="container-fluid text-center">
-	<div class="row">
+	<?php /*<div class="row">
 		<div class="col-md-12 top-footer">
 			
-		</div><?php /*<!-- /.top-footer -->*/ ?>
-	</div><?php /*<!-- /.row -->*/ ?>
+		</div><!-- /.top-footer -->*/ ?>
+	<?php /*</div><!-- /.row -->*/ ?>
 	
 	<div class="row">
 		<div class="col-md-12 bottom-footer">
