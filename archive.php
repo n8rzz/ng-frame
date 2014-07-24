@@ -5,21 +5,21 @@
 
 <div class="container-fluid jumbotron primary-header text-center">	
 	<div class="row">
-		<h1>
-			<?php if ( is_day() ) { ?>
-		      	Archive for <?php echo get_the_date(); ?>
-		    <?php  } elseif ( is_month() ) { ?>
-		    	Archive for <?php echo get_the_date('F Y'); ?>
-		    <?php  } elseif ( is_year() ) { ?>
-		      	Archive for <?php echo get_the_date('Y'); ?>
-		    <?php  } elseif ( is_category() ) { ?>
-		    	<?php single_cat_title(); ?> {Category Archive}
-		    <?php  } elseif ( is_author() ) { ?>
-		    	Archive for <?php the_author_meta( 'display_name' ); ?>
-		    <?php } else { ?>
-		      <?php  echo get_queried_object()->name; ?>
-		    <?php  } ?>
-		</h1>
+		<?php if ( is_day() ) { ?>
+	      	<h1>Archive for <?php echo get_the_date(); ?></h1>
+	    <?php  } elseif ( is_month() ) { ?>
+	    	<h1>Archive for <?php echo get_the_date('F Y'); ?></h1>
+	    <?php  } elseif ( is_year() ) { ?>
+	      	<h1>Archive for <?php echo get_the_date('Y'); ?></h1>
+	    <?php  } elseif ( is_category() ) { ?>
+	    	<h1><?php single_cat_title(); ?> <small>{Category Archive}</small></h1>
+		<?php  } elseif ( is_tag() ) { ?>
+			<h1><?php single_tag_title(); ?> <small>{Tag Archive}</small></h1>
+	    <?php  } elseif ( is_author() ) { ?>
+	    	<h1><small>Posts written by</small><?php the_author_meta( 'display_name' ); ?></h1>
+	    <?php } else { ?>
+	      <h1><?php  echo get_queried_object()->name; ?></h1>
+	    <?php  } ?>
 	</div><?php /*<!-- /.row -->*/ ?>
 </div><?php /*<!-- /.jumbotron -->*/ ?>
 
