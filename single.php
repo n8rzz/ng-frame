@@ -6,7 +6,7 @@
 		<div class="container-fluid jumbotron primary-header text-center">	
 			<div class="row">
 				<h1><?php the_title() ?>
-				 	<small><?php the_date(); ?></small>
+				 	<small><?php echo ng_frame_date_archive_links(); ?></small>
 				</h1>
 
 			</div><?php /*<!-- /.row -->*/ ?>

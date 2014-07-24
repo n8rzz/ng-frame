@@ -34,10 +34,12 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 64px; }
   h1 small {
+    display: block; }
+  h1 small,
+  h1 small a {
     padding-top: .25em;
-    display: block;
     font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
+    font-size: 28px;
     color: #4c976d; }
 
 h2 {
@@ -66,8 +68,21 @@ article {
   article h3,
   article h4 {
     margin-top: 0.5em; }
-  article small {
-    font-family: "Ubuntu", sans-serif; }
+    article h3 small,
+    article h3 small a,
+    article h4 small,
+    article h4 small a {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 18px; }
+    article h3 small a,
+    article h4 small a {
+      color: #999; }
+      article h3 small a:hover, article h3 small a:focus, article h3 small a:active,
+      article h4 small a:hover,
+      article h4 small a:focus,
+      article h4 small a:active {
+        color: #40659f;
+        font-decoration: none; }
   article img {
     margin: 0.5em 1em; }
 
@@ -77,7 +92,6 @@ hr {
   margin-bottom: 0.5em;
   border-top: 1px dashed #aaa; }
 
-/* /layout.scss #################### */
 footer {
   background: #1c2c46;
   font-family: "Quicksand", sans-serif;
@@ -86,6 +100,7 @@ footer {
 footer p {
   padding: 1em 0; }
 
+/* /layout.scss #################### */
 /* Partials - Elements */
 /*-- bootstrap class over-writes --*/
 /*-- navigation --*/
@@ -127,6 +142,10 @@ footer p {
   font-family: "Oxygen", sans-serif;
   color: #fff;
   vertical-align: middle !important; }
+
+ul.pagination li .current {
+  background-color: #2c4770;
+  color: #7689a9; }
 
 ul.pager {
   font-size: 14px; }
