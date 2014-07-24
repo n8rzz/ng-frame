@@ -14,9 +14,9 @@
 			  
 			  <div class="col-md-10 col-md-offset-1">  		
 				<article class="text-left">
-				
-					<?php the_content(); ?>
-
+					<section>
+						<?php the_content(); ?>
+					</section>
 				</article>
 		  		</div><?php /*<!-- /.col-md-12 -->*/ ?>
 

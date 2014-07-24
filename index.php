@@ -18,8 +18,10 @@
 			<article class="text-left" id="post-<?php the_ID(); ?>">
 				<h3><span class="badge">New</span> <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a><br />
 				<small>posted on: <?php the_date(); ?></small></h3>
-					<?php the_excerpt(); ?>
-					<a href="<?php echo get_permalink(); ?>"> Read More...</a>
+					<section>
+						<?php the_excerpt(); ?>
+						<a href="<?php echo get_permalink(); ?>"> Read More...</a>
+					</section>
 			</article>	
 
 			<hr />
