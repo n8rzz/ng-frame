@@ -31,7 +31,7 @@
 		<div class="row">
 	  	    <div class="col-md-12">
 
-				<article class="text-left" id="post-<?php the_ID(); ?>">
+				<article <?php post_class('text-left'); ?> id="post-<?php the_ID(); ?>">
 					<section>
 						<h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 						<small>posted: <?php echo ng_frame_date_archive_links(); ?></small></h3>
