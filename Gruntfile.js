@@ -134,7 +134,17 @@ module.exports = function(grunt) {
 //                	'<%= config.dist %>/category.html' : '<%= config.dev %>/category.html'
 //                }
 //			}
-//		}
+//		},
+		cssmin: {
+			minify: {
+				expand: true,
+				cwd: 'dist/styles/',
+				src: ['*.css', '!*.min.css'],
+				dest: 'dist/styles/',
+				ext: '.min.css'
+			}
+		}
+
 	});
 
 	grunt.registerTask('default', [ 'watch' ]);
@@ -156,6 +166,8 @@ module.exports = function(grunt) {
 		'copy:build',
 //		'useminPrepare',
 //		'usemin',
-//		'htmlmin'
+//		'htmlmin',
+		'cssmin'
+
 	]);
 }

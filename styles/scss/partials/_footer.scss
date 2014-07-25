@@ -1,0 +1,15 @@
+/* footer.scss #################### */
+.top-footer {
+	min-height: 10em;
+	background: $slight-light-blue;
+	color: $footer-txt-color;
+	overflow: auto;
+}
+.bottom-footer {
+	color: $footer-txt-color;	
+	p {
+		padding-top: 1em;
+		padding-bottom: 0.5em;
+	}
+}
+/* /footer.scss #################### */
