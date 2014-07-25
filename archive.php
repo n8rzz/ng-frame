@@ -6,11 +6,11 @@
 <div class="container-fluid jumbotron primary-header text-center">	
 	<div class="row">
 		<?php if ( is_day() ) { ?>
-	      	<h1>Archive for <?php echo get_the_date(); ?></h1>
+	      	<h1><?php echo get_the_date(); ?><small>{Date Archive}</small></h1>
 	    <?php  } elseif ( is_month() ) { ?>
-	    	<h1>Archive for <?php echo get_the_date('F Y'); ?></h1>
+	    	<h1><?php echo get_the_date('F Y'); ?> <small>{Date Archive}</small></h1>
 	    <?php  } elseif ( is_year() ) { ?>
-	      	<h1>Archive for <?php echo get_the_date('Y'); ?></h1>
+	      	<h1><?php echo get_the_date('Y'); ?> <small>{Date Archive}</small></h1>
 	    <?php  } elseif ( is_category() ) { ?>
 	    	<h1><?php single_cat_title(); ?> <small>{Category Archive}</small></h1>
 		<?php  } elseif ( is_tag() ) { ?>

@@ -2,9 +2,9 @@
 
 
 <div class="container-fluid jumbotron primary-header text-center">	
-<!--	<div class="row">
-		<h1>Circle Logo</h1>
-	</div> /.row -->
+	<div class="row">
+		<h1><?php  bloginfo( 'name' ); ?> <small><?php bloginfo( 'description' ); ?></small></h1>
+	</div><!-- /.row -->
 </div><!-- /.jumbotron -->
 
 
