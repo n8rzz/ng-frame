@@ -88,7 +88,7 @@
 		</div><?php /*<!-- /.col-sm-12 col-md-4 -->*/ ?>
 	</div><?php /*<!-- /.row -->*/ ?>
 
-<?php /*<!-- AUTHOR META -->*/ ?>
+<?php /*<!-- AUTHOR META -->*//* ?>
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">		
 			<footer class="post-author-meta text-left">
@@ -120,9 +120,9 @@
 					</li>	
 				</ul>
 			</footer>
-		</div><?php /*<!-- /.col-md-12 -->*/ ?>	
+		</div><?php *//*<!-- /.col-md-12 -->*/ ?>	
 
-	</div><?php /*<!-- /.row -->*/ ?>
+<?php /*<!--	</div> /.row -->*/ ?>
 </div><?php /*<!-- /.container-fluid -->*/ ?>
 
 		<?php
