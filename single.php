@@ -122,7 +122,7 @@
 			</footer>
 		</div><?php *//*<!-- /.col-md-12 -->*/ ?>	
 
-	</div><?php /*<!-- /.row -->*/ ?>
+<?php /*<!--	</div> /.row -->*/ ?>
 </div><?php /*<!-- /.container-fluid -->*/ ?>
 
 		<?php
