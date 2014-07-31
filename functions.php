@@ -3,7 +3,7 @@
 require get_template_directory() . '/inc/ng_frame_enques.php';
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 require get_template_directory() . '/inc/bootstrap_utilities.php';
-
+require get_template_directory() . '/inc/ng_frame_required_plugins.php';
 
 add_action( 'after_setup_theme', 'ng_frame_theme_setup' );
 
@@ -30,10 +30,11 @@ function ng_frame_theme_setup() {
 	add_action( 'wp_enqueue_scripts', 'ng_frame_load_styles', 11 );
 	add_action( 'admin_menu', 'all_settings_link' );
 
-	/* add custom filters */
+	/* add custom filters 
 	add_filter( 'wp_title', 'ng_frame_wp_title', 10, 2 );
 	add_filter( 'user_contactmethods', 'ng_frame_userfields', 10, 1 );
 	add_filter( 'the_content_more_link', 'remove_more_jump_link', 10, 1 );
+	*/
 }
 
 /*--- ################### ---*/
