@@ -31,10 +31,6 @@
 				</article>
 
 <?php /*
-<!-- RELATED POSTS -->
-<!-- related posts 
-		<div class="col-md-12 text-center">related posts</div>
--->
 
 <!-- FUTURE POST REFERENCES -->
 <!-- plugin, use shortcodes -->
@@ -69,6 +65,15 @@
 		</div><?php /*<!-- /.col-md-6 -->*/ ?>
 	</div><?php /*<!-- /.row -->*/ ?>
 </div><?php /*<!-- /.container-fluid -->*/ ?>
+
+
+<!-- RELATED POSTS -->
+<div class="container">
+	<div class="row ng-frame-related">
+		<?php related_posts(); ?>
+	</div><?php /* /.row */ ?>
+</div><?php /* /.container-fluid */ ?>
+
 
 <?php /*<!-- POST META -->*/ ?>
 <div class="container-fluid text-center blog-post-meta">
