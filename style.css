@@ -199,7 +199,7 @@ ul.pager {
 
 .ng-frame-pager {
   padding-top: 1em;
-  padding-bottom: 2.75em;
+  padding-bottom: 1.75em;
   border-bottom: 2px dashed #69969c; }
   .ng-frame-pager .col-sm-5 {
     padding-left: 0;
@@ -216,10 +216,19 @@ ul.pager {
       text-decoration: none;
       background-color: #2c4770; }
 
+.ng-frame-related {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  .ng-frame-related a {
+    color: #79b694; }
+    .ng-frame-related a:hover, .ng-frame-related a:focus, .ng-frame-related a:active {
+      color: #40659f; }
+
 .blog-post-meta {
   padding-top: 1.5em;
   padding-bottom: 2em;
-  background-color: #f2f5f7; }
+  background-color: #f2f5f7;
+  border-top: 2px dashed #69969c; }
 
 .blog-post-meta-date, .blog-post-meta-category, .blog-post-meta-tags {
   margin-bottom: 0.05em;
