@@ -22,7 +22,7 @@
 
 .ng-frame-pager {
 	padding-top: 1em;
-	padding-bottom: 2.75em;
+	padding-bottom: 1.75em;
 	border-bottom: 2px dashed $light-blue-green;
 	.col-sm-5 {
 		padding-left: 0;
@@ -45,10 +45,24 @@
 	}
 }
 
+.ng-frame-related {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	a {
+		color: $basic-green;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $light-blue;
+		}
+	}
+}
+
 .blog-post-meta {
 	padding-top: 1.5em;
 	padding-bottom: 2em;
 	background-color: $light-light-grey;
+	border-top: 2px dashed $light-blue-green;
 }
 .blog-post-meta-date, .blog-post-meta-category, .blog-post-meta-tags {
 	margin-bottom: 0.05em;
